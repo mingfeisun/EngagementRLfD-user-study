@@ -23,9 +23,10 @@
 <body>
   <div class="container">
     <h2>Robot Learning from Demonstration</h2>
-
-    <p>Some introduction and contact information</p>
-
+    <div class="well">
+      <b>ATTENTION:</b> During the whole experiment, please <b>DO NOT</b> refresh the browser. Otherwise, all data will be lost. 
+    </div>
+    <p>Welcome to participate this study. For any questions, please contact mingfei.sun.hk@gmail.com</p>
     <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
       <li><a data-toggle="tab" href="#demo1">Demo #1</a></li>
@@ -46,14 +47,16 @@
         <h3>Teach robot to play sport</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-
-        <ul id="pager-1" class="pager"> <li><a href="#demo1">Next</a></li> </ul>
+        <ul class="pager"> <li>
+          <a id="pager-0" href="#demo1">Next</a>
+        </li> </ul>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
         </div>
         
       </div>
 
+      <!-- /////////////////////////////////////// -->
       <div id="demo1" class="tab-pane fade">
         <h3>Demonstration #1 </h3>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -66,18 +69,20 @@
           </p>
         </div>
 
-        <div class="modal" id="div_watch_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal" id="div_watch_1" tabindex="-1" role="dialog" aria-labelledby="modal-vid-1" aria-hidden="true">
           <div class="modal-dialog  modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Demonstration</h5>
+                <h5 class="modal-title" id="modal-vid-1">Demonstration</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body" align="center">
                 <video id="vid_real_1" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+                  <!--
                   <source src="64_01.mp4" type='video/mp4'>
+                  -->
                 </video>
               </div>
               <div class="modal-footer">
@@ -96,11 +101,11 @@
           </p>
         </div>
 
-        <div class="modal" id="div_sim_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal" id="div_sim_1" tabindex="-1" role="dialog" aria-labelledby="modal-sim-1" aria-hidden="true">
           <div class="modal-dialog  modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Teaching</h5>
+                <h5 class="modal-title" id="modal-sim-1">Teaching</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -108,7 +113,9 @@
               <div class="modal-body" align="center">
                 <div class="container-fluid">
                   <video id="vid_sim_1" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
+                    <!--
                       <source src="test.mp4" type='video/mp4'>
+                    -->
                   </video>
                 </div>
               </div>
@@ -122,8 +129,11 @@
 
         <h4>Step 3: rate robot learning process</h4>
         <div class="well">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <div id="panel_question_1_1" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://ust.az1.qualtrics.com/jfe/form/SV_2cAjHJzZDfkFCvP" allowfullscreen></iframe>
+            -->
           </div>
         </div>
 
@@ -133,157 +143,336 @@
           <p class="lead">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Check the robot learning outcomes </button>
           </p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe id="panel_question_1" class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+          <div id="panel_question_1_2" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://ust.az1.qualtrics.com/jfe/form/SV_2cAjHJzZDfkFCvP" allowfullscreen></iframe>
+            -->
           </div>
         </div>
-
-        <ul id="pager-2" class="pager"> <li><a href="#demo2">Next</a></li> </ul>
-
+        <ul class="pager"> <li>
+          <a id="pager-1-prev" href="#home">Previous</a>
+          <a id="pager-1" href="#demo2">Next</a>
+        </li> </ul>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
         </div>
       </div>
 
+      <!-- /////////////////////////////////////// -->
       <div id="demo2" class="tab-pane fade">
         <h3>Demonstration #2 </h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <video id="vid_real_2" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
-          <source src="64_01.mp4" type='video/mp4'>
-        </video>
-        <button id="btn_watch_2" class="button button0" data-toggle="collapse" data-target="#div_watch_2" onclick='videojs("vid_real_2").play();'> <span>Click to watch the demonstration</span></button>
-        <div id="div_watch_2" class="panel-collapse collapse" style="width: 50%;">
-          <div style="display: inline-block;">
-            <button class="button_status" onclick='videojs("vid_real_2").play();'>Watch again</button>
-            <button class="button_status" onclick='document.getElementById("panel_video_2").style.display="block";'>Next</button>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <h4>Step 1: human demonstration</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_2" onclick='videojs("vid_real_2").play();'> Watch the demonstration from a professional coach </button>
+          </p>
+        </div>
+
+        <div class="modal" id="div_watch_2" tabindex="-1" role="dialog" aria-labelledby="modal-vid-2" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-vid-2">Demonstration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <video id="vid_real_2" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+                  <!--
+                  <source src="64_01.mp4" type='video/mp4'>
+                  -->
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_real_2").play();'>Demonstrate again</button>
+              </div>
+            </div>
           </div>
         </div>
-        <h4>Current progress:</h4>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+
+        <h4>Step 2: teaching robot</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Teach the robot by the coach's demonstration </button>
+          </p>
         </div>
-        <ul id="pager-3" class="pager"> <li><a href="#demo3">Next</a></li> </ul>
+
+        <div class="modal" id="div_sim_2" tabindex="-1" role="dialog" aria-labelledby="modal-sim-2" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-sim-2">Teaching</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <div class="container-fluid">
+                  <video id="vid_sim_2" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
+                    <!--
+                      <source src="test.mp4" type='video/mp4'>
+                    -->
+                  </video>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_2").play();'>Teach again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Step 3: rate robot learning process</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Check the robot learning outcomes </button>
+          </p>
+          <div id="panel_question_2_1" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+            -->
+          </div>
+        </div>
+
+        <h4>Step 4: learning outcome evaluation</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Check the robot learning outcomes </button>
+          </p>
+          <div id="panel_question_2_2" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+            -->
+          </div>
+        </div>
+
+        <ul class="pager"> <li>
+          <a id="pager-2-prev" href="#demo1">Previous</a>
+          <a id="pager-2" href="#demo3">Next</a>
+        </li> </ul>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+        </div>
       </div>
 
+      <!-- /////////////////////////////////////// -->
       <div id="demo3" class="tab-pane fade">
         <h3>Demonstration #3 </h3>
         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        <video id="vid_real_3" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
-          <source src="64_01.mp4" type='video/mp4'>
-        </video>
-        <button id="btn_watch_3" class="button button0" data-toggle="collapse" data-target="#div_watch_3" onclick='videojs("vid_real_3").play();'> <span>Click to watch the demonstration</span></button>
-        <div id="div_watch_3" class="panel-collapse collapse" style="width: 50%;">
-          <div style="display: inline-block;">
-            <button class="button_status" onclick='videojs("vid_real_3").play();'>Watch again</button>
-            <button class="button_status" onclick='document.getElementById("panel_video_3").style.display="block";'>Next</button>
+
+        <h4>Step 1: human demonstration</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_3" onclick='videojs("vid_real_3").play();'> Watch the demonstration from a professional coach </button>
+          </p>
+        </div>
+
+        <div class="modal" id="div_watch_3" tabindex="-1" role="dialog" aria-labelledby="modal-vid-3" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-vid-3">Demonstration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <video id="vid_real_3" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+                  <!--
+                  <source src="64_01.mp4" type='video/mp4'>
+                  -->
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_real_3").play();'>Demonstrate again</button>
+              </div>
+            </div>
           </div>
         </div>
-        <h4>Current progress:</h4>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+
+        <h4>Step 2: teaching robot</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Teach the robot by the coach's demonstration </button>
+          </p>
         </div>
-        <ul id="pager-4" class="pager"> <li><a href="#demo4">Next</a></li> </ul>
+
+        <div class="modal" id="div_sim_3" tabindex="-1" role="dialog" aria-labelledby="modal-sim-3" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-sim-3">Teaching</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <video id="vid_sim_3" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
+                  <!--
+                    <source src="test.mp4" type='video/mp4'>
+                  -->
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_3").play();'>Teach again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Step 3: rate robot learning process</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Check the robot learning outcomes </button>
+          </p>
+          <div id="panel_question_3_1" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+            -->
+          </div>
+        </div>
+
+        <h4>Step 4: learning outcome evaluation</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Check the robot learning outcomes </button>
+          </p>
+          <div id="panel_question_3_2" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+            -->
+          </div>
+        </div>
+        
+        <ul class="pager"> <li>
+          <a id="pager-3-prev" href="#demo2">Previous</a>
+          <a id="pager-3" href="#demo4">Next</a>
+        </li> </ul>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+        </div>
       </div>
 
+      <!-- /////////////////////////////////////// -->
       <div id="demo4" class="tab-pane fade">
         <h3>Demonstration #4 </h3>
         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        <video id="vid_real_4" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
-          <source src="64_01.mp4" type='video/mp4'>
-        </video>
-        <button id="btn_watch_4" class="button button0" data-toggle="collapse" data-target="#div_watch_4" onclick='videojs("vid_real_4").play();'> <span>Click to watch the demonstration</span></button>
-        <div id="div_watch_4" class="panel-collapse collapse" style="width: 50%;">
-          <div style="display: inline-block;">
-            <button class="button_status" onclick='videojs("vid_real_4").play();'>Watch again</button>
-            <button class="button_status" onclick='document.getElementById("panel_video_4").style.display="block";'>Next</button>
+        
+        <h4>Step 1: human demonstration</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_4" onclick='videojs("vid_real_4").play();'> Watch the demonstration from a professional coach </button>
+          </p>
+        </div>
+
+        <div class="modal" id="div_watch_4" tabindex="-1" role="dialog" aria-labelledby="modal-vid-4" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-vid-4">Demonstration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <video id="vid_real_4" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+                  <!--
+                  <source src="64_01.mp4" type='video/mp4'>
+                  -->
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_real_4").play();'>Demonstrate again</button>
+              </div>
+            </div>
           </div>
         </div>
-        <h4>Current progress:</h4>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 99%">99%</div>
+
+        <h4>Step 2: teaching robot</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Teach the robot by the coach's demonstration </button>
+          </p>
         </div>
-        <ul id="pager-5" class="pager"> <li><a href="#demo4">Finish</a></li> </ul>
+
+        <div class="modal" id="div_sim_4" tabindex="-1" role="dialog" aria-labelledby="modal-sim-4" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-sim-4">Teaching</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <video id="vid_sim_4" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
+                  <!--
+                    <source src="test.mp4" type='video/mp4'>
+                  -->
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_4").play();'>Teach again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Step 3: rate robot learning process</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Check the robot learning outcomes </button>
+          </p>
+          <div id="panel_question_4_1" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+            -->
+          </div>
+        </div>
+
+        <h4>Step 4: learning outcome evaluation</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Check the robot learning outcomes </button>
+          </p>
+          <div id="panel_question_4_2" class="embed-responsive embed-responsive-16by9">
+            <!--
+            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
+            -->
+          </div>
+        </div>
+        <ul class="pager"> <li>
+          <a id="pager-4-prev" href="#demo3">Previous</a>
+          <a id="pager-4" href="#demo4">Next</a>
+        </li> </ul>
+        <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 99%">99%</div>
       </div>
 
     </div>
   </div>
 
-  <div class="overlay" align="center" id="panel_video_1" style="display: none;">
-    <div class="vid_div" align="center">
-    </div>
-    <div align="center">
-      <button id="btn_sim_1" class="button button1" data-toggle="collapse" data-target="#div_sim_1" > <span>Click to demonstrate</span></button>
-      <div id="div_sim_1" class="panel-collapse collapse" style="width: 80%;">
-        <div style="display: inline-block;">
-          <button class="button_status" onclick='videojs("vid_sim_1").play();'>Demonstrate again</button>
-          <button class="button_status" onclick='document.getElementById("panel_question_1").style.visibility="visible";'>Finish demonstration❯</button>
-        </div>
-      </div>
-    </div>
-    <iframe id="panel_question_1" src="https://www.w3schools.com" style="visibility: hidden; width: 60%; height: 600px"></iframe>
-   </div>
-  </div>
-
-  <div class="overlay" align="center" id="panel_video_2" style="display: none">
-    <div class="vid_div" align="center">
-      <video id="vid_sim_2" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-          <source src="test.mp4" type='video/mp4'>
-      </video>
-    </div>
-    <div align="center">
-      <button id="btn_sim_2" class="button button1" data-toggle="collapse" data-target="#div_sim_2" > <span>Click to demonstrate</span></button>
-      <div id="div_sim_2" class="panel-collapse collapse" style="width: 80%;">
-        <div style="display: inline-block;">
-          <button class="button_status" onclick='videojs("vid_sim_2").play();'>Demonstrate again</button>
-          <button class="button_status" onclick='document.getElementById("panel_question_2").style.visibility="visible";'>Finish demonstration❯</button>
-        </div>
-      </div>
-    </div>
-    <div id="panel_question_2" style="visibility: hidden" align="center">
-      here are some questions
-    </div>
-  </div>
-
-  <div class="overlay" align="center" id="panel_video_3" style="display: none">
-    <div class="vid_div" align="center">
-      <video id="vid_sim_3" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-          <source src="test.mp4" type='video/mp4'>
-      </video>
-    </div>
-    <div align="center">
-      <button id="btn_sim_3" class="button button1" data-toggle="collapse" data-target="#div_sim_3" > <span>Click to demonstrate</span></button>
-      <div id="div_sim_3" class="panel-collapse collapse" style="width: 80%;">
-        <div style="display: inline-block;">
-          <button class="button_status" onclick='videojs("vid_sim_3").play();'>Demonstrate again</button>
-          <button class="button_status" onclick='document.getElementById("panel_question_3").style.visibility="visible";'>Finish demonstration❯</button>
-        </div>
-      </div>
-    </div>
-    <div id="panel_question_3" style="visibility: hidden" align="center">
-      here are some questions
-    </div>
-  </div>
-
-  <div class="overlay" align="center" id="panel_video_4" style="display: none">
-    <div class="vid_div" align="center">
-      <video id="vid_sim_4" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-          <source src="test.mp4" type='video/mp4'>
-      </video>
-    </div>
-    <div align="center">
-      <button id="btn_sim_4" class="button button1" data-toggle="collapse" data-target="#div_sim_4" > <span>Click to demonstrate</span></button>
-      <div id="div_sim_4" class="panel-collapse collapse" style="width: 80%;">
-        <div style="display: inline-block;">
-          <button class="button_status" onclick='videojs("vid_sim_4").play();'>Demonstrate again</button>
-          <button class="button_status" onclick='document.getElementById("panel_question_4").style.visibility="visible";'>Finish demonstration❯</button>
-        </div>
-      </div>
-    </div>
-    <div id="panel_question_4" style="visibility: hidden" align="center">
-      here are some questions
-    </div>
-  </div>
-
+  <script src="rnd_control.js"></script>
   <script src="http://vjs.zencdn.net/6.8.0/video.js"></script>
   <script src="play_control.js"></script>
 </body>
