@@ -15,6 +15,19 @@ var btn_fin 		= [];
 
 var n_clicks        = [];
 
+$("#pager-1").click(function(){
+    $(".nav-tabs a[href='#demo1']").tab('show');
+});
+$("#pager-2").click(function(){
+    $(".nav-tabs a[href='#demo2']").tab('show');
+});
+$("#pager-3").click(function(){
+    $(".nav-tabs a[href='#demo3']").tab('show');
+});
+$("#pager-4").click(function(){
+    $(".nav-tabs a[href='#demo4']").tab('show');
+});
+
 for (var i = 0; i < id_vid_real.length; i++) {
 	vid_real.push(videojs(id_vid_real[i]));
 	vid_sim.push(videojs(id_vid_sim[i]));

@@ -1,206 +1,215 @@
 <!DOCTYPE html> 
 <html> 
 <head>
+  <title>LfD user study</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="http://vjs.zencdn.net/6.8.0/video-js.css" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-  <style type="text/css">
-    .vid_div {
-      display: inline-block;
-    }
-    .video-js {
-      float: center;
-      margin: 0px;
-    }
-
-    .button {
-        border: none;
-        border-radius: 5px;
-        color: white;
-        width: 40%;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-        font-weight: bold;
-        margin: 4px 2px;
-        cursor: pointer;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-    .button1 {
-        background-color: #008000; /* Green */
-    }
-    .button2 {
-        background-color: #8B0000; /* Green */
-    }
-    .button0 {
-        background-color: #008B8B; /* Green */
-    }
-
-    .button span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-
-    .button span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-
-    .button:hover span {
-      padding-right: 25px;
-    }
-
-    .button:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
-    .button_status {
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      -webkit-transition-duration: 0.4s; /* Safari */
-      transition-duration: 0.4s;
-    }
-
-    .button_status:hover {
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    }
-
-    .overlay {
-      position: fixed;
-      display: none;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.7);
-      z-index: 2;
-    }
-
-  </style>
 </head>
 
 <body>
-  <div align="center">
+  <div class="container">
     <h2>Robot Learning from Demonstration</h2>
-  </div>
 
-  <div align="center">
+    <p>Some introduction and contact information</p>
 
-    <div class="panel-group" id="accordion" style="width: 50%;">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+      <li><a data-toggle="tab" href="#demo1">Demo #1</a></li>
+      <li><a data-toggle="tab" href="#demo2">Demo #2</a></li>
+      <li><a data-toggle="tab" href="#demo3">Demo #3</a></li>
+      <li><a data-toggle="tab" href="#demo4">Demo #4</a></li>
+    </ul>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Demonstration #1</a>
-          </h4>
+    <div class="tab-content">
+
+      <div id="home" class="tab-pane fade in active">
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <h3>Robot playing sport</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <h3>Teach robot to play sport</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+        <ul id="pager-1" class="pager"> <li><a href="#demo1">Next</a></li> </ul>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
         </div>
-        <div id="collapse1" class="panel-collapse collapse in">
+        
+      </div>
 
-          <video id="vid_real_1" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
-            <source src="64_01.mp4" type='video/mp4'>
-          </video>
-          <button id="btn_watch_1" class="button button0" data-toggle="collapse" data-target="#div_watch_1" onclick='videojs("vid_real_1").play();'> <span>Click to watch the demonstration</span></button>
-          <div id="div_watch_1" class="panel-collapse collapse" style="width: 50%;">
-            <div style="display: inline-block;">
-              <button class="button_status" onclick='videojs("vid_real_1").play();'>Watch again</button>
-              <button class="button_status" onclick='document.getElementById("panel_video_1").style.display="block";'>Next</button>
+      <div id="demo1" class="tab-pane fade">
+        <h3>Demonstration #1 </h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <h4>Step 1: human demonstration</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_1" onclick='videojs("vid_real_1").play();'> Watch the demonstration from a professional coach </button>
+          </p>
+        </div>
+
+        <div class="modal" id="div_watch_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Demonstration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <video id="vid_real_1" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+                  <source src="64_01.mp4" type='video/mp4'>
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_real_1").play();'>Demonstrate again</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Demonstration #2</a>
-          </h4>
+        <h4>Step 2: teaching robot</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Teach the robot by the coach's demonstration </button>
+          </p>
         </div>
-        <div id="collapse2" class="panel-collapse collapse">
-          <video id="vid_real_2" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
-            <source src="64_01.mp4" type='video/mp4'>
-          </video>
-          <button id="btn_watch_2" class="button button0" data-toggle="collapse" data-target="#div_watch_2" onclick='videojs("vid_real_2").play();'> <span>Click to watch the demonstration</span></button>
-          <div id="div_watch_2" class="panel-collapse collapse" style="width: 50%;">
-            <div style="display: inline-block;">
-              <button class="button_status" onclick='videojs("vid_real_2").play();'>Watch again</button>
-              <button class="button_status" onclick='document.getElementById("panel_video_2").style.display="block";'>Next</button>
+
+        <div class="modal" id="div_sim_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Teaching</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" align="center">
+                <div class="container-fluid">
+                  <video id="vid_sim_1" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
+                      <source src="test.mp4" type='video/mp4'>
+                  </video>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_1").play();'>Teach again</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Demonstration #3</a>
-          </h4>
-        </div>
-        <div id="collapse3" class="panel-collapse collapse">
-          <video id="vid_real_3" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
-            <source src="64_01.mp4" type='video/mp4'>
-          </video>
-          <button id="btn_watch_3" class="button button0" data-toggle="collapse" data-target="#div_watch_3" onclick='videojs("vid_real_3").play();'> <span>Click to watch the demonstration</span></button>
-          <div id="div_watch_3" class="panel-collapse collapse" style="width: 50%;">
-            <div style="display: inline-block;">
-              <button class="button_status" onclick='videojs("vid_real_3").play();'>Watch again</button>
-              <button class="button_status" onclick='document.getElementById("panel_video_3").style.display="block";'>Next</button>
-            </div>
+        <h4>Step 3: rate robot learning process</h4>
+        <div class="well">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
           </div>
         </div>
-      </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Demonstration #4</a>
-          </h4>
-        </div>
-        <div id="collapse4" class="panel-collapse collapse">
-          <video id="vid_real_4" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
-            <source src="64_01.mp4" type='video/mp4'>
-          </video>
-          <button id="btn_watch_4" class="button button0" data-toggle="collapse" data-target="#div_watch_4" onclick='videojs("vid_real_4").play();'> <span>Click to watch the demonstration</span></button>
-          <div id="div_watch_4" class="panel-collapse collapse" style="width: 50%;">
-            <div style="display: inline-block;">
-              <button class="button_status" onclick='videojs("vid_real_4").play();'>Watch again</button>
-              <button class="button_status" onclick='document.getElementById("panel_video_4").style.display="block";'>Next</button>
-            </div>
+        <h4>Step 4: learning outcome evaluation</h4>
+        <div class="well">
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Check the robot learning outcomes </button>
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="panel_question_1" class="embed-responsive-item" src="https://www.mingfeisun.com" allowfullscreen></iframe>
           </div>
         </div>
+
+        <ul id="pager-2" class="pager"> <li><a href="#demo2">Next</a></li> </ul>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+        </div>
       </div>
 
-    </div> 
+      <div id="demo2" class="tab-pane fade">
+        <h3>Demonstration #2 </h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <video id="vid_real_2" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+          <source src="64_01.mp4" type='video/mp4'>
+        </video>
+        <button id="btn_watch_2" class="button button0" data-toggle="collapse" data-target="#div_watch_2" onclick='videojs("vid_real_2").play();'> <span>Click to watch the demonstration</span></button>
+        <div id="div_watch_2" class="panel-collapse collapse" style="width: 50%;">
+          <div style="display: inline-block;">
+            <button class="button_status" onclick='videojs("vid_real_2").play();'>Watch again</button>
+            <button class="button_status" onclick='document.getElementById("panel_video_2").style.display="block";'>Next</button>
+          </div>
+        </div>
+        <h4>Current progress:</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+        </div>
+        <ul id="pager-3" class="pager"> <li><a href="#demo3">Next</a></li> </ul>
+      </div>
+
+      <div id="demo3" class="tab-pane fade">
+        <h3>Demonstration #3 </h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <video id="vid_real_3" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+          <source src="64_01.mp4" type='video/mp4'>
+        </video>
+        <button id="btn_watch_3" class="button button0" data-toggle="collapse" data-target="#div_watch_3" onclick='videojs("vid_real_3").play();'> <span>Click to watch the demonstration</span></button>
+        <div id="div_watch_3" class="panel-collapse collapse" style="width: 50%;">
+          <div style="display: inline-block;">
+            <button class="button_status" onclick='videojs("vid_real_3").play();'>Watch again</button>
+            <button class="button_status" onclick='document.getElementById("panel_video_3").style.display="block";'>Next</button>
+          </div>
+        </div>
+        <h4>Current progress:</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+        </div>
+        <ul id="pager-4" class="pager"> <li><a href="#demo4">Next</a></li> </ul>
+      </div>
+
+      <div id="demo4" class="tab-pane fade">
+        <h3>Demonstration #4 </h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <video id="vid_real_4" class="video-js" preload="auto" width="352" height="250" poster="test.jpg" data-setup='{"controls": false}'>
+          <source src="64_01.mp4" type='video/mp4'>
+        </video>
+        <button id="btn_watch_4" class="button button0" data-toggle="collapse" data-target="#div_watch_4" onclick='videojs("vid_real_4").play();'> <span>Click to watch the demonstration</span></button>
+        <div id="div_watch_4" class="panel-collapse collapse" style="width: 50%;">
+          <div style="display: inline-block;">
+            <button class="button_status" onclick='videojs("vid_real_4").play();'>Watch again</button>
+            <button class="button_status" onclick='document.getElementById("panel_video_4").style.display="block";'>Next</button>
+          </div>
+        </div>
+        <h4>Current progress:</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 99%">99%</div>
+        </div>
+        <ul id="pager-5" class="pager"> <li><a href="#demo4">Finish</a></li> </ul>
+      </div>
+
+    </div>
   </div>
 
   <div class="overlay" align="center" id="panel_video_1" style="display: none;">
     <div class="vid_div" align="center">
-      <video id="vid_sim_1" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-          <source src="test.mp4" type='video/mp4'>
-      </video>
     </div>
     <div align="center">
       <button id="btn_sim_1" class="button button1" data-toggle="collapse" data-target="#div_sim_1" > <span>Click to demonstrate</span></button>
