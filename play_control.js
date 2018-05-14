@@ -18,6 +18,7 @@ var n_clicks        = [];
 for (var i = 0; i < id_vid_real.length; i++) {
 	vid_real.push(videojs(id_vid_real[i]));
 	vid_sim.push(videojs(id_vid_sim[i]));
+
 	panel_video.push(document.getElementById(id_panel_video[i]));
 	panel_question.push(document.getElementById(id_panel_question[i]));
 	btn_sim.push(document.getElementById(id_btn_sim[i]));
@@ -26,16 +27,41 @@ for (var i = 0; i < id_vid_real.length; i++) {
 	n_clicks.push(0);
 }
 
-function simulation(idx){
-	n_clicks[idx] ++;
-	vid_sim[idx].play();
-}
 
-function finishSession(idx){}
-
-// bind the simulation button 
-btn_sim[0].onclick = function(){simulation(0);};
-btn_sim[1].onclick = function(){simulation(1);};
-btn_sim[2].onclick = function(){simulation(2);};
-btn_sim[3].onclick = function(){simulation(3);};
+$("#pager-0").click(function(){
+    $(".nav-tabs a[href='#demo1']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-1").click(function(){
+    $(".nav-tabs a[href='#demo2']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-2").click(function(){
+    $(".nav-tabs a[href='#demo3']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-3").click(function(){
+    $(".nav-tabs a[href='#demo4']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-4").click(function(){
+    $(".nav-tabs a[href='#demo4']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-1-prev").click(function(){
+    $(".nav-tabs a[href='#home']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-2-prev").click(function(){
+    $(".nav-tabs a[href='#demo1']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-3-prev").click(function(){
+    $(".nav-tabs a[href='#demo2']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$("#pager-4-prev").click(function(){
+    $(".nav-tabs a[href='#demo3']").tab('show');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
 
