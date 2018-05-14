@@ -16,7 +16,19 @@ var html_q_rating   = [];
 var html_q_overall  = [];
 
 // user id: unique for answering the questionairs
-var user_id = null;
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+var user_id = uuidv4();
+
+// show user id
+var htmlUserId = document.createElement("p");
+var nodeUserId = document.createTextNode(user_id);
+htmlUserId.appendChild(nodeUserId);
+document.getElementById('user_id').appendChild(htmlUserId);
 
 // questionair urls
 var url_question_rating = [
@@ -60,12 +72,12 @@ for (var i = 0; i < html_vid_real.length; i++){
 
 	var htmlFrame1 = document.createElement("iframe");
 	htmlFrame1.setAttribute("class", "embed-responsive-item");
-	htmlFrame1.setAttribute("src", url_question_rating[currMode[i]-1]);
+	htmlFrame1.setAttribute("src", url_question_rating[currMode[i]-1] + "?uid=" + user_id + "&mode=" + currMode[i]);
 	html_q_rating[i].appendChild(htmlFrame1);
 
 	var htmlFrame2 = document.createElement("iframe");
 	htmlFrame2.setAttribute("class", "embed-responsive-item");
-	htmlFrame2.setAttribute("src", url_question_overall[currMode[i]-1]);
+	htmlFrame2.setAttribute("src", url_question_overall[currMode[i]-1] + "?uid=" + user_id + "&mode=" + currMode[i]);
 	html_q_overall[i].appendChild(htmlFrame2);
 }
 

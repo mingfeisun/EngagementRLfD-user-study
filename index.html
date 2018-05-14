@@ -24,20 +24,21 @@
   <div class="container">
     <h2>Robot Learning from Demonstration</h2>
     <div class="well">
-      <b>ATTENTION:</b> During the whole experiment, please <b>DO NOT</b> refresh the browser. Otherwise, all data will be lost. 
+      <b>ATTENTION:</b> During the whole experiment, please <b>DO NOT</b> refresh the browser. Otherwise, all data would be lost. 
     </div>
-    <p>Welcome to participate this study. For any questions, please contact mingfei.sun.hk@gmail.com</p>
     <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-      <li><a data-toggle="tab" href="#demo1">Demo #1</a></li>
-      <li><a data-toggle="tab" href="#demo2">Demo #2</a></li>
-      <li><a data-toggle="tab" href="#demo3">Demo #3</a></li>
-      <li><a data-toggle="tab" href="#demo4">Demo #4</a></li>
+      <li class="active not-active"><a data-toggle="tab" href="#home">Home</a></li>
+      <li class="not-active"><a data-toggle="tab" href="#demo1">Demo #1</a></li>
+      <li class="not-active"><a data-toggle="tab" href="#demo2">Demo #2</a></li>
+      <li class="not-active"><a data-toggle="tab" href="#demo3">Demo #3</a></li>
+      <li class="not-active"><a data-toggle="tab" href="#demo4">Demo #4</a></li>
     </ul>
 
     <div class="tab-content">
 
       <div id="home" class="tab-pane fade in active">
+        <p>Welcome to participate this study. For any questions, please contact mingfei.sun.hk@gmail.com</p>
+
         <h3>HOME</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -464,11 +465,36 @@
         </div>
         <ul class="pager"> <li>
           <a id="pager-4-prev" href="#demo3">Previous</a>
-          <a id="pager-4" href="#demo4">Next</a>
+          <a id="pager-4" href="" data-toggle="modal" data-target="#finishModal">Next</a>
         </li> </ul>
         <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 99%">99%</div>
       </div>
 
+    </div>
+
+    <div class="modal fade" id="finishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><strong>Success</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-success" role="alert">
+              <h4 class="alert-heading">Well done!</h4>
+            </div>
+            <p>Your answers have been successfully collected. Please copy the following ID to finish the process in AMT.</p>
+            <div id="user_id" class="well">
+            </div>
+            <p class="mb-0">Thanks for your time and efforts. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="this.window.close();">Exit</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
