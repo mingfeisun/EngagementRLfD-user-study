@@ -26,7 +26,7 @@
     <div class="well">
       <b>ATTENTION:</b> During the whole experiment, please <b>DO NOT</b> refresh the browser. Otherwise, all data will be lost. 
     </div>
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" style="display: none;">
       <li class="active not-active"><a data-toggle="tab" href="#home">Home</a></li>
       <li class="not-active"><a data-toggle="tab" href="#demo1">Team Member #1</a></li>
       <li class="not-active"><a data-toggle="tab" href="#demo2">Team Member #2</a></li>
@@ -37,13 +37,13 @@
     <div class="tab-content">
 
       <div id="home" class="tab-pane fade in active">
-        <h4>Welcome</h4>
-        <p>
+        <h3>Welcome</h3>
+        <p style="font-size:16px;">
           Welcome to participate in this experiment. The whole experiment consists of four sessions and each will last for around 5min. In each session, you are required to answer questions upon finishing the designated tasks. Please submit your answers immediatly after you finish the questions by clicking <button type="button" class="btn btn-primary">Submit</button>. Once the experiment is finished, an information window containing the unique ID will pop up.
         </p>
 
-        <h4>Teaching robots to play sports</h4>
-        <p>
+        <h3>Teaching robots to play sports</h3>
+        <p style="font-size:16px;">
           Now assuming you have a team of four robots for the robot Olympic game. In order to get in the competition, you have to teach these robots how to play different sports. So you recruit professional coaches to help teach and train them. Your task is to rate your team members' performances during the teaching process, and evaluate whether they are good learners. 
         </p>
 
@@ -82,7 +82,7 @@
           </div>
         </div>
 
-        <p>
+        <p style="font-size:16px;">
         For each team member (the robot), it needs to study one sport skill in three steps. First, a professional coach will demonstrate how to do that sport skill. Second, after the demonstration, the robot needs to learn from the sport demonstrations in a simulation environment. During this process, you need to rate the robot's learning behaviors. Finally, the robot needs to perform the skill by itself so that you can evaluate whether it has successfully obtained the skill. 
         </p>
 
@@ -104,7 +104,7 @@
           </div>
         </div>
 
-        <p>
+        <p style="font-size:16px;">
           Good, you can start to teach the robots right now. Please click next to start. 
         </p>
 
@@ -130,21 +130,28 @@
             </div>
           </div>
           <div class="col-xs-9">
-            <h4>Step 1: Coach demonstration</h4>
+            <h3>Step 1: Coach demonstration</h3>
             <div class="well">
-              <p>Click to watch the coach demonstration to see what the sport the robot needs to learn.</p>
+              <p style="font-size:16px;">
+                Click to watch the coach demonstration to see what the sport the robot needs to learn.
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_1" onclick='videojs("vid_real_1").play();'> Watch the coach's demonstration</button>
             </div>
-            <h4>Step 2: Teaching robot</h4>
+            <h3>Step 2: Teaching robot</h3>
             <div class="well">
-              <p>Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated.</p>
+              <p style="font-size:16px;">
+                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated. 
+              </p> 
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Teach the robot by using the demonstration </button>
             </div>
 
 
-            <h4>Step 3: Rating robot learning process</h4>
+            <h3>Step 3: Rating robot learning process</h3>
             <div class="well">
-              <p>According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.</p> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watching </button>
+              <p style="font-size:16px;">
+                According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.
+              </p> 
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watching </button>
               <div id="panel_question_1_1" class="embed-responsive embed-responsive-16by9">
                 <!--
                 <iframe class="embed-responsive-item" src="https://ust.az1.qualtrics.com/jfe/form/SV_2cAjHJzZDfkFCvP" allowfullscreen></iframe>
@@ -152,9 +159,11 @@
               </div>
             </div>
 
-            <h4>Step 4: Checking learning outcome</h4>
+            <h3>Step 4: Checking learning outcome</h3>
             <div class="well">
-              <p>Click to check the robot's learning outcome. Please evaluate the robot's learning abilities</p>
+              <p style="font-size:16px;">
+                Click to check the robot's learning outcome. Please evaluate the robot's learning abilities
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Check the robot learning outcomes </button>
               <div id="panel_question_1_2" class="embed-responsive embed-responsive-16by9">
                 <!--
@@ -185,21 +194,28 @@
             </div>
           </div>
           <div class="col-xs-9">
-            <h4>Step 1: Coach demonstration</h4>
+            <h3>Step 1: Coach demonstration</h3>
             <div class="well">
-              <p>Click to watch the coach demonstration to see what the sport the robot needs to learn.</p>
+              <p style="font-size:16px;">
+                Click to watch the coach demonstration to see what the sport the robot needs to learn.
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_1" onclick='videojs("vid_real_2").play();'> Watch the coach's demonstration</button>
             </div>
-            <h4>Step 2: Teaching robot</h4>
+            <h3>Step 2: Teaching robot</h3>
             <div class="well">
-              <p>Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated.</p>
+              <p style="font-size:16px;">
+                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated.
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Teach the robot by using the demonstration </button>
             </div>
 
 
-            <h4>Step 3: Rating robot learning process</h4>
+            <h3>Step 3: Rating robot learning process</h3>
             <div class="well">
-              <p>According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.</p> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watching </button>
+              <p style="font-size:16px;">
+                According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.
+              </p> 
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watching </button>
               <div id="panel_question_2_1" class="embed-responsive embed-responsive-16by9">
                 <!--
                 <iframe class="embed-responsive-item" src="https://ust.az1.qualtrics.com/jfe/form/SV_2cAjHJzZDfkFCvP" allowfullscreen></iframe>
@@ -207,9 +223,11 @@
               </div>
             </div>
 
-            <h4>Step 4: Checking learning outcome</h4>
+            <h3>Step 4: Checking learning outcome</h3>
             <div class="well">
-              <p>Click to check the robot's learning outcome. Please evaluate the robot's learning abilities</p>
+              <p style="font-size:16px;">
+                Click to check the robot's learning outcome. Please evaluate the robot's learning abilities
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Check the robot learning outcomes </button>
               <div id="panel_question_2_2" class="embed-responsive embed-responsive-16by9">
                 <!--
@@ -240,21 +258,28 @@
             </div>
           </div>
           <div class="col-xs-9">
-            <h4>Step 1: Coach demonstration</h4>
+            <h3>Step 1: Coach demonstration</h3>
             <div class="well">
-              <p>Click to watch the coach demonstration to see what the sport the robot needs to learn.</p>
+              <p style="font-size:16px;">
+                Click to watch the coach demonstration to see what the sport the robot needs to learn.
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_3" onclick='videojs("vid_real_3").play();'> Watch the coach's demonstration</button>
             </div>
-            <h4>Step 2: Teaching robot</h4>
+            <h3>Step 2: Teaching robot</h3>
             <div class="well">
-              <p>Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated.</p>
+              <p style="font-size:16px;">
+                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated.
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Teach the robot by using the demonstration </button>
             </div>
 
 
-            <h4>Step 3: Rating robot learning process</h4>
+            <h3>Step 3: Rating robot learning process</h3>
             <div class="well">
-              <p>According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.</p> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watching </button>
+              <p style="font-size:16px;">
+                According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.
+              </p> 
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watching </button>
               <div id="panel_question_3_1" class="embed-responsive embed-responsive-16by9">
                 <!--
                 <iframe class="embed-responsive-item" src="https://ust.az1.qualtrics.com/jfe/form/SV_2cAjHJzZDfkFCvP" allowfullscreen></iframe>
@@ -262,9 +287,11 @@
               </div>
             </div>
 
-            <h4>Step 4: Checking learning outcome</h4>
+            <h3>Step 4: Checking learning outcome</h3>
             <div class="well">
-              <p>Click to check the robot's learning outcome. Please evaluate the robot's learning abilities</p>
+              <p style="font-size:16px;">
+                Click to check the robot's learning outcome. Please evaluate the robot's learning abilities
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Check the robot learning outcomes </button>
               <div id="panel_question_3_2" class="embed-responsive embed-responsive-16by9">
                 <!--
@@ -295,21 +322,28 @@
             </div>
           </div>
           <div class="col-xs-9">
-            <h4>Step 1: Coach demonstration</h4>
+            <h3>Step 1: Coach demonstration</h3>
             <div class="well">
-              <p>Click to watch the coach demonstration to see what the sport the robot needs to learn.</p>
+              <p style="font-size:16px;">
+                Click to watch the coach demonstration to see what the sport the robot needs to learn.
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_watch_4" onclick='videojs("vid_real_4").play();'> Watch the coach's demonstration</button>
             </div>
-            <h4>Step 2: Teaching robot</h4>
+            <h3>Step 2: Teaching robot</h3>
             <div class="well">
-              <p>Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated.</p>
+              <p style="font-size:16px;">
+                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the teaching can be terminated.
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Teach the robot by using the demonstration </button>
             </div>
 
 
-            <h4>Step 3: Rating robot learning process</h4>
+            <h3>Step 3: Rating robot learning process</h3>
             <div class="well">
-              <p>According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.</p> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watching </button>
+              <p style="font-size:16px;">
+                According to the above teaching, please rate the robot learning performances. You can re-watch the teaching process.
+              </p> 
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watching </button>
               <div id="panel_question_4_1" class="embed-responsive embed-responsive-16by9">
                 <!--
                 <iframe class="embed-responsive-item" src="https://ust.az1.qualtrics.com/jfe/form/SV_2cAjHJzZDfkFCvP" allowfullscreen></iframe>
@@ -317,9 +351,11 @@
               </div>
             </div>
 
-            <h4>Step 4: Checking learning outcome</h4>
+            <h3>Step 4: Checking learning outcome</h3>
             <div class="well">
-              <p>Click to check the robot's learning outcome. Please evaluate the robot's learning abilities</p>
+              <p style="font-size:16px;">
+                Click to check the robot's learning outcome. Please evaluate the robot's learning abilities
+              </p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Check the robot learning outcomes </button>
               <div id="panel_question_4_2" class="embed-responsive embed-responsive-16by9">
                 <!--
@@ -329,7 +365,7 @@
             </div>
           </div>
         </div>
-        
+
         <ul class="pager"> <li>
           <a id="pager-4-prev" href="#demo3">Previous</a>
           <a id="pager-4" href="" data-toggle="modal" data-target="#finishModal">Next</a>
