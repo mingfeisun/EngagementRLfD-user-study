@@ -69,15 +69,5 @@ for (var i = 0; i < html_vid_real.length; i++){
 	htmlSource2.setAttribute("src", vid_name_sim);
 	htmlSource2.setAttribute("type", "video/mp4");
 	html_vid_sim[i].appendChild(htmlSource2);
-
-	var htmlFrame1 = document.createElement("iframe");
-	htmlFrame1.setAttribute("class", "embed-responsive-item");
-	htmlFrame1.setAttribute("src", url_question_rating[currMode[i]-1] + "?uid=" + user_id + "&mode=" + currMode[i] + "-rating");
-	html_q_rating[i].appendChild(htmlFrame1);
-
-	var htmlFrame2 = document.createElement("iframe");
-	htmlFrame2.setAttribute("class", "embed-responsive-item");
-	htmlFrame2.setAttribute("src", url_question_overall[currMode[i]-1] + "?uid=" + user_id + "&mode=" + currMode[i] + "-overall");
-	html_q_overall[i].appendChild(htmlFrame2);
 }
 

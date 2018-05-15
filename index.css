@@ -7,8 +7,6 @@
 .not-active {
   /* pointer-events: none;
   cursor: not-allowed;*/
-  pointer-events: none;
-  cursor: not-allowed;
 }
 
 .modal.in{
