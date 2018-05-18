@@ -58,27 +58,16 @@ function checkQuestionRating(objData){
 		return false;
 	}
 
+	var items = ["engagement", "learning", "terminate", "master"];
 	if (objData.length != 4){
-		var num = -1;
+		var num = objData.length+1;
 		for (var i = 0; i < objData.length; i++) {
-			num = i;
-			if (objData[i].name == "engagement"){
-				num = -1;
-			}
-			if (objData[i].name == "learning"){
-				num = -1;
-			}
-			if (objData[i].name == "terminate"){
-				num = -1;
-			}
-			if (objData[i].name == "master"){
-				num = -1;
-			}
-			if (num != -1){
+			if (objData[i].name != items[i]){
+				num = i+1;
 				break;
 			}
 		}
-		alert("Please rate Q" + (num+1) + " in Step 2");
+		alert("Please rate Q" + num + " in Step 2");
 		return false;
 	}
 	for (var i = 0; i < objData.length; i++) {
@@ -98,34 +87,21 @@ function checkQuestionOverall(objData){
 	}
 
 	var items = ["outcome", "expectation", "why"];
-	var num_total = 11+12+13;
 	if (objData.length != 3){
-		var num = -1;
+		var num = objData.length + 1;
 		for (var i = 0; i < objData.length; i++) {
-			num = i;
-			if (objData[i].name == "engagement"){
-				num = -1;
-			}
-			if (objData[i].name == "learning"){
-				num = -1;
-			}
-			if (objData[i].name == "terminate"){
-				num = -1;
-			}
-			if (objData[i].name == "master"){
-				num = -1;
-			}
-			if (num != -1){
+			if (objData[i].name != items[i]){
+				num = i+1;
 				break;
 			}
 		}
-		alert("Please rate Q" + (num+1) + " in Step 3");
+		alert("Please answer Q" + (num+4) + " in Step 3");
 		return false;
 	}
 
 	for (var i = 0; i < objData.length; i++) {
 		if (objData[i].value == ""){
-			alert("Please rate Q" + (i+5) + " in Step 3");
+			alert("Please answer Q" + (i+5) + " in Step 3");
 			return false;
 		}
 	}
@@ -194,18 +170,88 @@ $("#pager-1").click(function(){
 });
 
 $("#pager-2").click(function(){
+	var objDataMan = $("#panel_man_2").serializeArray();
+	if (!checkFormSportType(objDataMan)) {
+		return;
+	}
+	else{
+		data_man_2 = objDataMan;
+	}
+
+	var objDataQRating = $("#panel_question_2_1").serializeArray();
+	if (!checkQuestionRating(objDataQRating)){
+		return;
+	}
+	else{
+		data_question_2_rating = objDataQRating;
+	}
+
+	var objDataQOverall = $("#panel_question_2_2").serializeArray();
+	if (!checkQuestionOverall(objDataQOverall)){
+		return;
+	}
+	else{
+		data_question_2_overall = objDataQOverall;
+	}
     $(".nav-tabs a[href='#demo3']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
 $("#pager-3").click(function(){
+	var objDataMan = $("#panel_man_3").serializeArray();
+	if (!checkFormSportType(objDataMan)) {
+		return;
+	}
+	else{
+		data_man_3 = objDataMan;
+	}
+
+	var objDataQRating = $("#panel_question_3_1").serializeArray();
+	if (!checkQuestionRating(objDataQRating)){
+		return;
+	}
+	else{
+		data_question_3_rating = objDataQRating;
+	}
+
+	var objDataQOverall = $("#panel_question_3_2").serializeArray();
+	if (!checkQuestionOverall(objDataQOverall)){
+		return;
+	}
+	else{
+		data_question_3_overall = objDataQOverall;
+	}
     $(".nav-tabs a[href='#demo4']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
 $("#pager-4").click(function(){
-    $(".nav-tabs a[href='#demo4']").tab('show');
-	$("html, body").animate({ scrollTop: 0 }, "slow");
+	var objDataMan = $("#panel_man_4").serializeArray();
+	if (!checkFormSportType(objDataMan)) {
+		return;
+	}
+	else{
+		data_man_4 = objDataMan;
+	}
+
+	var objDataQRating = $("#panel_question_4_1").serializeArray();
+	if (!checkQuestionRating(objDataQRating)){
+		return;
+	}
+	else{
+		data_question_4_rating = objDataQRating;
+	}
+
+	var objDataQOverall = $("#panel_question_4_2").serializeArray();
+	if (!checkQuestionOverall(objDataQOverall)){
+		return;
+	}
+	else{
+		data_question_4_overall = objDataQOverall;
+	}
+    // $(".nav-tabs a[href='#demo4']").tab('show');
+	// $("html, body").animate({ scrollTop: 0 }, "slow");
+	$("#finishModal").modal();
 });
 
 $("#pager-1-prev").click(function(){
