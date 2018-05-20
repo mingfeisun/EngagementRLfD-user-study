@@ -277,9 +277,10 @@ $("#pager-4").click(function(){
 
 function submitData(){
 	var xhr = new XMLHttpRequest();
-	var url = "http://localhost:5000/test";
+	var url = "http://165.227.108.67/mingfei/submit.php"
 	xhr.open("POST", url, true);
 	xhr.setRequestHeader("Content-Type", "application/json");
+	// xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === 4 && xhr.status === 200) {
 	        console.log(xhr.responseText);
