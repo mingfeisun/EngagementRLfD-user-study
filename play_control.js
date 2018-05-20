@@ -277,13 +277,17 @@ $("#pager-4").click(function(){
 
 function submitData(){
 	var xhr = new XMLHttpRequest();
-	var url = "url";
+	var url = "http://localhost:5000/test";
 	xhr.open("POST", url, true);
 	xhr.setRequestHeader("Content-Type", "application/json");
 	xhr.onreadystatechange = function () {
-        console.log("ok");
+		if (xhr.readyState === 4 && xhr.status === 200) {
+	        console.log(xhr.responseText);
+	    }
 	};
-	data = {"man_1": data_man_1, 
+	data = {"uid": user_id,
+			"info": data_info,
+			"man_1": data_man_1, 
 			"man_2": data_man_2, 
 			"man_3": data_man_3, 
 			"man_4": data_man_4, 
