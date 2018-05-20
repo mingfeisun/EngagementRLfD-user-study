@@ -138,6 +138,10 @@ $("#pager-0").click(function(){
 	}
     $(".nav-tabs a[href='#demo1']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
+	$('#popupPage-1').modal('show');
+	setTimeout(function() {
+	    $('#popupPage-1').modal('hide');
+	}, 2000);
 });
 
 $("#pager-1").click(function(){
@@ -167,6 +171,11 @@ $("#pager-1").click(function(){
 
     $(".nav-tabs a[href='#demo2']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
+
+	$('#popupPage-2').modal('show');
+	setTimeout(function() {
+	    $('#popupPage-2').modal('hide');
+	}, 2000);
 });
 
 $("#pager-2").click(function(){
@@ -195,6 +204,11 @@ $("#pager-2").click(function(){
 	}
     $(".nav-tabs a[href='#demo3']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
+	
+	$('#popupPage-3').modal('show');
+	setTimeout(function() {
+	    $('#popupPage-3').modal('hide');
+	}, 2000);
 });
 
 $("#pager-3").click(function(){
@@ -223,6 +237,11 @@ $("#pager-3").click(function(){
 	}
     $(".nav-tabs a[href='#demo4']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
+	
+	$('#popupPage-4').modal('show');
+	setTimeout(function() {
+	    $('#popupPage-4').modal('hide');
+	}, 2000);
 });
 
 $("#pager-4").click(function(){
@@ -251,8 +270,35 @@ $("#pager-4").click(function(){
 	}
     // $(".nav-tabs a[href='#demo4']").tab('show');
 	// $("html, body").animate({ scrollTop: 0 }, "slow");
-	$("#finishModal").modal();
+	submitData();
+
+	$("#finishModal").modal('show');
 });
+
+function submitData(){
+	var xhr = new XMLHttpRequest();
+	var url = "url";
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+	xhr.onreadystatechange = function () {
+        console.log("ok");
+	};
+	data = {"man_1": data_man_1, 
+			"man_2": data_man_2, 
+			"man_3": data_man_3, 
+			"man_4": data_man_4, 
+			"q1_rating": data_question_1_rating,
+			"q2_rating": data_question_2_rating,
+			"q3_rating": data_question_3_rating,
+			"q4_rating": data_question_4_rating,
+			"q1_overall": data_question_1_overall,
+			"q2_overall": data_question_2_overall,
+			"q3_overall": data_question_3_overall,
+			"q4_overall": data_question_4_overall
+		}
+	var dataJson = JSON.stringify(data);
+	xhr.send(dataJson);
+}
 
 $("#pager-1-prev").click(function(){
     $(".nav-tabs a[href='#home']").tab('show');
