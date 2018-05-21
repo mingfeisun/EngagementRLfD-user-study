@@ -13,15 +13,15 @@ $data = file_get_contents('php://input');
 $dataJson = json_decode($data, true);
 
 $userId = $dataJson["uid"];
-$userName = $dataJson["info"][0]["value"];
+// $userName = $dataJson["info"][0]["value"];
 
-if (empty($userId) || empty($userName)){
+if (empty($userId))){
     exit("Empty data received");
 }
 
 $timestamp = date('Y-m-d-H-i-s');
 
-$filename = $timestamp.'-'.$userId.'-'.$userName.'.json';
+$filename = $timestamp.'-'.$userId.'.json';
 
 if (file_put_contents($filename, $data)){
     echo "Received:".$timestamp;
