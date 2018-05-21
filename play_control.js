@@ -288,6 +288,8 @@ function submitData(){
 	};
 	data = {"uid": user_id,
 			"info": data_info,
+			"mode": currMode,
+			"sport": currSport,
 			"man_1": data_man_1, 
 			"man_2": data_man_2, 
 			"man_3": data_man_3, 
