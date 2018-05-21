@@ -15,7 +15,7 @@ $dataJson = json_decode($data, true);
 $userId = $dataJson["uid"];
 // $userName = $dataJson["info"][0]["value"];
 
-if (empty($userId))){
+if (empty($userId)){
     exit("Empty data received");
 }
 
