@@ -6,13 +6,13 @@ How to change:
 2. Open and find RBicep & LBicep, insert code as follow:
 ```
 <gazebo>
-  <material>Gazebo/Organge</matertial>
+  <material>Gazebo/Orange</material>
   
   <!--
-  <material>Gazebo/Green</matertial>
-  <material>Gazebo/Blue</matertial>
-  <material>Gazebo/Red</matertial>
-  <material>Gazebo/Purple</matertial>
+  <material>Gazebo/Green</material>
+  <material>Gazebo/Blue</material>
+  <material>Gazebo/Red</material>
+  <material>Gazebo/Purple</material>
   -->
 </gazebo> 
 ```
