@@ -324,7 +324,7 @@ function submitData(){
 	// xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === 4 && xhr.status === 200) {
-			document.getElementById('user_id').innerHTML = user_id;
+			document.getElementById('user_id').innerHTML = xhr.responseText;
 	        // console.log(xhr.responseText);
 	    }
 	};
