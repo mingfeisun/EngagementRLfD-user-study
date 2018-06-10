@@ -22,7 +22,7 @@
 
 <body>
   <div class="container">
-    <h2>Teaching robots to play sports <small> Robot Learning from Demonstration</small></h2>
+    <h2>Robots learn to play sports <small> Robot Learning from Demonstration</small></h2>
     <div class="well">
       <b>ATTENTION:</b> During the whole experiment, please <b>DO NOT</b> refresh the browser. Otherwise, all data will be lost. 
     </div>
@@ -69,12 +69,12 @@
         </form>
 
         <p style="font-size:16px;">
-          Welcome to participate in this experiment. The whole experiment consists of four sessions and each will last for around 5min. In each session, you are required to answer <strong>EVERY</strong> question. 
+          Welcome to participate in this experiment. The whole experiment consists of 4 sessions and each takes around 3min to finish. In each session, you are required to answer <strong>ALL</strong> questions. 
         </p>
 
-        <h3>Teaching robots to play sports</h3>
+        <h3>Robots learn to play sports</h3>
         <p style="font-size:16px;">
-          Now assuming you have a team of four robots for the robot Olympic game (as shown below). In order to get in the competition, you have to teach these robots how to play different sports. Suppose you recruit professional coaches to help teach and train them remotely. Your task is to rate your team members' performances during the teaching process, and evaluate whether they are good learners. 
+          Now assuming you have a team of four robots for the robot Olympic game (as shown below). In order to get in the competition, you have to teach these robots how to play different sports. Suppose you recruit professional coaches to help teach and train them remotely. Your task is to rate your team members' performances during the learning process, and evaluate whether they are good learners. 
         </p>
 
         <div class="row">
@@ -82,7 +82,7 @@
             <div class="thumbnail">
               <img src="member-1.png" alt="Lights" style="width:100%">
               <div class="caption" align="center">
-                <p>Team member #1</p>
+                <h4>Team member #1</h4>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@
             <div class="thumbnail">
               <img src="member-2.png" alt="Lights" style="width:100%">
               <div class="caption" align="center">
-                <p>Team member #2</p>
+                <h4>Team member #2</h4>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@
             <div class="thumbnail">
               <img src="member-3.png" alt="Lights" style="width:100%">
               <div class="caption" align="center">
-                <p>Team member #3</p>
+                <h4>Team member #3</h4>
               </div>
             </div>
           </div>
@@ -106,14 +106,14 @@
             <div class="thumbnail">
               <img src="member-4.png" alt="Lights" style="width:100%">
               <div class="caption" align="center">
-                <p>Team member #4</p>
+                <h4>Team member #4</h4>
               </div>
             </div>
           </div>
         </div>
 
         <p style="font-size:16px;">
-        For each team member (the robot), it needs to study one sports skill in three steps. First of all, a professional coach will demonstrate offline how to do that sports skill (<b> Check video Step 1 Demonstration </b>). Second, after the demonstration, the robot will be trained by an coach avatar in an online environment ( <b>Check video Step 2 Learning </b>). During this process, you need to rate the robot's learning performance. Finally, based on the robot behaviors, you need to estimate whether it can successfully master the skill.
+        For each team member (the robot), it needs to study one sports skill. First of all, a professional coach will demonstrate offline how to do that sports skill (<b> Check video below: Step 1 Demonstration </b>). Second, after the demonstration, the robot will be trained by an coach avatar in an online environment ( <b>Check video below: Step 2 Learning </b>). During the second step, you need to rate the robot's learning performance. Finally, in Step 3, you need to estimate whether the robot can successfully master the skill based on its behaviors.
         </p>
 
         <div class="row">
@@ -136,7 +136,7 @@
           -->
         </div>
 
-        <h4>One sample question:</h4>
+        <h4>One possible question to be asked:</h4>
         <form>
           <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-info">
@@ -187,7 +187,7 @@
         </form>
 
         <p style="font-size:16px;">
-          Good, you can start to teach the robots right now. Please click next to start. 
+          Good, you can start to watch the robot learning process right now. Please click next to start. 
         </p>
 
 
@@ -245,15 +245,15 @@
               </form>
 
             </div>
-            <h3>Step 2: Teaching robot</h3>
+            <h3>Step 2: Robot learning</h3>
             <div class="well">
               <p style="font-size:16px;">
-                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the robot has been sufficiently trained.
+                Now click to watch the robot learn the above sports skill in a simulator. Please pay attention to the robot behaviors. 
               </p> 
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Teach the robot by using the demonstration </button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Watch the robot learn the demonstration </button>
 
               <p style="font-size:16px;">
-                Please rate the robot learning performances. You can re-watch the teaching process.
+                Please rate the robot learning performances. You can re-watch the learning process.
               </p> 
 
               <form id="panel_question_1_1" style="display: none;">
@@ -443,10 +443,10 @@
 
             </div>
 
-            <h3>Step 3: Checking learning ability</h3>
+            <h3>Step 3: Learning evaluation</h3>
             <div class="well">
               <p style="font-size:16px;">
-                Please evaluate the robot's learning abilities
+                Please expect the robot learning outcome:
               </p>
               <!--
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_outcome_1" onclick='videojs("vid_outcome_1").play();'> Check the robot learning outcomes </button>
@@ -460,7 +460,7 @@
                         <div style="display: inline-block;">
                           <h4> 
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
-                            Q5. From the training process, this robot has mastered the sports skill in this time. 
+                            Q5. From the learning process, this robot has mastered the sports skill in this time. 
                           </h4>
                         </div>
                         <div class="form-check form-check-inline">
@@ -505,7 +505,7 @@
                         <div style="display: inline-block;">
                           <h4> 
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
-                            Q6. From the learning behaviors, this robot will master the sports skill in the long run if sufficient trainings are provided. 
+                            Q6. Based on the learning behaviors, I believe this robot will master the sports skill in the long run if sufficient trainings are provided. 
                           </h4>
                         </div>
                         <div class="form-check form-check-inline">
@@ -659,12 +659,12 @@
               </form>
 
             </div>
-            <h3>Step 2: Teaching robot</h3>
+            <h3>Step 2: Robot learning</h3>
             <div class="well">
               <p style="font-size:16px;">
-                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the robot has been sufficiently trained.
+                Now click to watch the robot learn the above sports skill in a simulator. Please pay attention to the robot behaviors. 
               </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Teach the robot by using the demonstration </button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Watch the robot learn the demonstration  </button>
 
               <p style="font-size:16px;">
                 Please rate the robot learning performances. You can re-watch the teaching process.
@@ -860,7 +860,7 @@
 
             </div>
 
-            <h3>Step 3: Checking learning ability</h3>
+            <h3>Step 3: Learning evaluation</h3>
             <div class="well">
               <p style="font-size:16px;">
                 Please evaluate the robot's learning abilities
@@ -878,7 +878,7 @@
                         <div style="display: inline-block;">
                           <h4> 
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
-                            Q5. From the training process, this robot has already mastered the sports skill. 
+                            Q5. From the learning process, this robot has already mastered the sports skill. 
                           </h4>
                         </div>
                         <div class="form-check form-check-inline">
@@ -1075,12 +1075,12 @@
                 </div>
               </form>
             </div>
-            <h3>Step 2: Teaching robot</h3>
+            <h3>Step 2: Robot learning</h3>
             <div class="well">
               <p style="font-size:16px;">
-                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the robot has been sufficiently trained.
+                Now click to watch the robot learn the above sports skill in a simulator. Please pay attention to the robot behaviors. 
               </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Teach the robot by using the demonstration </button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Watch the robot learn the demonstration  </button>
 
               <p style="font-size:16px;">
                 Please rate the robot learning performances. You can re-watch the teaching process.
@@ -1276,7 +1276,7 @@
 
             </div>
 
-            <h3>Step 3: Checking learning ability</h3>
+            <h3>Step 3: Learning evaluation</h3>
             <div class="well">
               <p style="font-size:16px;">
                 Please evaluate the robot's learning abilities
@@ -1293,7 +1293,7 @@
                         <div style="display: inline-block;">
                           <h4> 
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
-                            Q5. From the training process, this robot has already mastered the sports skill. 
+                            Q5. From the learning process, this robot has already mastered the sports skill. 
                           </h4>
                         </div>
                         <div class="form-check form-check-inline">
@@ -1490,12 +1490,12 @@
                 </div>
               </form>
             </div>
-            <h3>Step 2: Teaching robot</h3>
+            <h3>Step 2: Robot learning</h3>
             <div class="well">
               <p style="font-size:16px;">
-                Now click to teach the robot to learn the sport skill demonstrated by the coach in a simulator. You can teach the robot for several times until you think the robot has been sufficiently trained.
+                Now click to watch the robot learn the above sports skill in a simulator. Please pay attention to the robot behaviors. 
               </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Teach the robot by using the demonstration </button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Watch the robot learn the demonstration </button>
 
               <p style="font-size:16px;">
                 Please rate the robot learning performances. You can re-watch the teaching process.
@@ -1691,7 +1691,7 @@
 
             </div>
 
-            <h3>Step 3: Checking learning ability</h3>
+            <h3>Step 3: Learning evaluation</h3>
             <div class="well">
               <p style="font-size:16px;">
                 Please evaluate the robot's learning abilities
@@ -1708,7 +1708,7 @@
                         <div style="display: inline-block;">
                           <h4> 
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
-                            Q5. From the training process, this robot has already mastered the sports skill. 
+                            Q5. From the learning process, this robot has already mastered the sports skill. 
                           </h4>
                         </div>
                         <div class="form-check form-check-inline">
@@ -1869,7 +1869,7 @@
       <div class="modal-dialog  modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modal-vid-1">Coach's demonstration</h5>
+            <h4 class="modal-title" id="modal-vid-1">Coach's demonstration</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick='document.getElementById("panel_man_1").style.display="block";'>
               <span aria-hidden="true">&times;</span>
             </button>
@@ -1893,7 +1893,7 @@
       <div class="modal-dialog  modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modal-sim-1">Teaching the robot to perform the sport skill</h5>
+            <h4 class="modal-title" id="modal-sim-1">The robot learns the sports skill</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_1_1').style.display = 'block';document.getElementById('panel_question_1_2').style.display = 'block';">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -1909,7 +1909,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_1_1').style.display = 'block';document.getElementById('panel_question_1_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_1").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_1").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -1919,7 +1919,7 @@
       <div class="modal-dialog  modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modal-outcome-1">Teaching the robot to perform the sport skill</h5>
+            <h4 class="modal-title" id="modal-outcome-1">The robot learns the sports skill</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_1_2').style.display = 'block';">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -1935,7 +1935,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_1_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_1").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_1").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -1985,7 +1985,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_2_1').style.display = 'block';document.getElementById('panel_question_2_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_2").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_2").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -2011,7 +2011,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_2_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_2").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_2").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -2059,7 +2059,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_3_1').style.display = 'block';document.getElementById('panel_question_3_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_3").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_3").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -2083,7 +2083,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_3_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_3").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_3").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -2131,7 +2131,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_4_1').style.display = 'block';document.getElementById('panel_question_4_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_4").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_4").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -2155,7 +2155,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_4_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_4").play();'>Teach again</button>
+            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_4").play();'>Watch again</button>
           </div>
         </div>
       </div>
