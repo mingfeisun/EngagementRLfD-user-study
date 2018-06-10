@@ -58,28 +58,55 @@ function checkQuestionRating(objData){
 		return false;
 	}
 
-	var items = ["engagement", "learning", "terminate", "master"];
-	if (objData.length != 4){
+	var items = ["attention", "mimic", "engagement", "master", "why", "acceptable", "intelligence", "demonstration", "comments"];
+	if (objData.length != 9){
 		var num = objData.length+1;
 		for (var i = 0; i < objData.length; i++) {
 			if (objData[i].name != items[i]){
-				num = i+1;
+				num = i;
 				break;
 			}
 		}
-		alert("Please rate Q" + num + " in Step 2");
-		return false;
+		if (num < 4){
+			alert("Please answer Q" + (i+1) + " in Step 2");
+			return false;
+		}
+		if (num == 4){
+			alert("Please answer why question for Q4 in Step 2");
+			return false;
+		}
+		if (num == 8){
+			return true;
+		}
+		if (num > 4){
+			alert("Please answer Q" + i + " in Step 2");
+			return false;
+		}
 	}
 	for (var i = 0; i < objData.length; i++) {
 		if (objData[i].value == ""){
-			alert("Please rate Q" + (i+1) + " in Step 2");
-			return false;
+			if (i < 4){
+				alert("Please answer Q" + (i+1) + " in Step 2");
+				return false;
+			}
+			if (i == 4){
+				alert("Please answer why question for Q4 in Step 2");
+				return false;
+			}
+			if (i == 8){
+				return true;
+			}
+			if (i > 4){
+				alert("Please answer Q" + i + " in Step 2");
+				return false;
+			}
 		}
 	}
 
 	return true;
 }
 
+/*
 function checkQuestionOverall(objData){
 	if (objData.length == 0) {
 		alert("Please rate the robot learning outcome in Step 3");
@@ -109,6 +136,7 @@ function checkQuestionOverall(objData){
 
 	return true;
 }
+*/
 
 var data_info = null;
 
@@ -122,10 +150,12 @@ var data_question_2_rating = null;
 var data_question_3_rating = null;
 var data_question_4_rating = null;
 
+/*
 var data_question_1_overall = null;
 var data_question_2_overall = null;
 var data_question_3_overall = null;
 var data_question_4_overall = null;
+*/
 
 
 $("#pager-0").click(function(){
@@ -161,6 +191,7 @@ $("#pager-1").click(function(){
 		data_question_1_rating = objDataQRating;
 	}
 
+	/*
 	var objDataQOverall = $("#panel_question_1_2").serializeArray();
 	if (!checkQuestionOverall(objDataQOverall)){
 		return;
@@ -168,6 +199,7 @@ $("#pager-1").click(function(){
 	else{
 		data_question_1_overall = objDataQOverall;
 	}
+	*/
 
     $(".nav-tabs a[href='#demo2']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -195,6 +227,7 @@ $("#pager-2").click(function(){
 		data_question_2_rating = objDataQRating;
 	}
 
+	/*
 	var objDataQOverall = $("#panel_question_2_2").serializeArray();
 	if (!checkQuestionOverall(objDataQOverall)){
 		return;
@@ -202,6 +235,8 @@ $("#pager-2").click(function(){
 	else{
 		data_question_2_overall = objDataQOverall;
 	}
+	*/
+
     $(".nav-tabs a[href='#demo3']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
 	
@@ -228,6 +263,7 @@ $("#pager-3").click(function(){
 		data_question_3_rating = objDataQRating;
 	}
 
+	/*
 	var objDataQOverall = $("#panel_question_3_2").serializeArray();
 	if (!checkQuestionOverall(objDataQOverall)){
 		return;
@@ -235,6 +271,8 @@ $("#pager-3").click(function(){
 	else{
 		data_question_3_overall = objDataQOverall;
 	}
+	*/
+
     $(".nav-tabs a[href='#demo4']").tab('show');
 	$("html, body").animate({ scrollTop: 0 }, "slow");
 	
@@ -261,6 +299,7 @@ $("#pager-4").click(function(){
 		data_question_4_rating = objDataQRating;
 	}
 
+	/*
 	var objDataQOverall = $("#panel_question_4_2").serializeArray();
 	if (!checkQuestionOverall(objDataQOverall)){
 		return;
@@ -268,6 +307,8 @@ $("#pager-4").click(function(){
 	else{
 		data_question_4_overall = objDataQOverall;
 	}
+	*/
+
     // $(".nav-tabs a[href='#demo4']").tab('show');
 	// $("html, body").animate({ scrollTop: 0 }, "slow");
 	submitData();
@@ -283,7 +324,8 @@ function submitData(){
 	// xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === 4 && xhr.status === 200) {
-	        console.log(xhr.responseText);
+			document.getElementById('user_id').innerHTML = user_id;
+	        // console.log(xhr.responseText);
 	    }
 	};
 	data = {"uid": user_id,
@@ -297,11 +339,13 @@ function submitData(){
 			"q1_rating": data_question_1_rating,
 			"q2_rating": data_question_2_rating,
 			"q3_rating": data_question_3_rating,
-			"q4_rating": data_question_4_rating,
+			"q4_rating": data_question_4_rating
+			/*
 			"q1_overall": data_question_1_overall,
 			"q2_overall": data_question_2_overall,
 			"q3_overall": data_question_3_overall,
 			"q4_overall": data_question_4_overall
+			*/
 		}
 	var dataJson = JSON.stringify(data);
 	xhr.send(dataJson);

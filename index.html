@@ -79,8 +79,8 @@
 
         <div class="row">
           <div class="col-xs-3">
-            <div class="thumbnail">
-              <img src="member-1.png" alt="Lights" style="width:100%">
+            <div class="thumbnail" >
+              <img id="thumbnail-1" alt="Lights" style="width:100%">
               <div class="caption" align="center">
                 <h4>Team member #1</h4>
               </div>
@@ -88,7 +88,7 @@
           </div>
           <div class="col-xs-3">
             <div class="thumbnail">
-              <img src="member-2.png" alt="Lights" style="width:100%">
+              <img id="thumbnail-2" alt="Lights" style="width:100%">
               <div class="caption" align="center">
                 <h4>Team member #2</h4>
               </div>
@@ -96,7 +96,7 @@
           </div>
           <div class="col-xs-3">
             <div class="thumbnail">
-              <img src="member-3.png" alt="Lights" style="width:100%">
+              <img id="thumbnail-3" alt="Lights" style="width:100%">
               <div class="caption" align="center">
                 <h4>Team member #3</h4>
               </div>
@@ -104,7 +104,7 @@
           </div>
           <div class="col-xs-3">
             <div class="thumbnail">
-              <img src="member-4.png" alt="Lights" style="width:100%">
+              <img id="thumbnail-4" alt="Lights" style="width:100%">
               <div class="caption" align="center">
                 <h4>Team member #4</h4>
               </div>
@@ -113,7 +113,7 @@
         </div>
 
         <p style="font-size:16px;">
-        For each team member (the robot), it needs to study one sports skill. First of all, a professional coach will demonstrate offline how to do that sports skill (<b> Check video below: Step 1 Demonstration </b>). Second, after the demonstration, the robot will be trained by an coach avatar in an online environment ( <b>Check video below: Step 2 Learning </b>). During the second step, you need to rate the robot's learning performance. Finally, in Step 3, you need to estimate whether the robot can successfully master the skill based on its behaviors.
+        For each team member (the robot), it needs to learn one sports skill in two steps. First of all, a professional coach will demonstrate offline how to do that sports skill (<b> Check video below: Step 1 Demonstration </b>). Second, after the demonstration, the robot will be trained by an coach avatar in an online environment ( <b>Check video below: Step 2 Learning </b>). After the second step, you need to rate the robot's learning performance as well as its learning ability.
         </p>
 
         <div class="row">
@@ -208,7 +208,7 @@
           <div class="col-xs-3">
             <h3 align="center">Team Member #1 </h3>
             <div class="thumbnail">
-              <img src="member-1.png" alt="Lights" style="width:100%">
+              <img id="thumbnail-1-1" alt="Lights" style="width:100%">
             </div>
           </div>
           <div class="col-xs-9">
@@ -263,41 +263,41 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
-                          Q1. The robot was engaged in learning the sports skill.
+                          Q1. The robot was paying attention to the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio1-1-1">
+                        <input class="form-check-input" type="radio" name="attention" value="1" id="radio1-1-1">
                         <label class="form-check-label" for="radio1-1-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio1-1-2">
+                        <input class="form-check-input" type="radio" name="attention" value="2" id="radio1-1-2">
                         <label class="form-check-label" for="radio1-1-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio1-1-3">
+                        <input class="form-check-input" type="radio" name="attention" value="3" id="radio1-1-3">
                         <label class="form-check-label" for="radio1-1-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio1-1-4">
+                        <input class="form-check-input" type="radio" name="attention" value="4" id="radio1-1-4">
                         <label class="form-check-label" for="radio1-1-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio1-1-5">
+                        <input class="form-check-input" type="radio" name="attention" value="5" id="radio1-1-5">
                         <label class="form-check-label" for="radio1-1-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio1-1-6">
+                        <input class="form-check-input" type="radio" name="attention" value="6" id="radio1-1-6">
                         <label class="form-check-label" for="radio1-1-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio1-1-7">
+                        <input class="form-check-input" type="radio" name="attention" value="7" id="radio1-1-7">
                         <label class="form-check-label" for="radio1-1-7">Strongly disagree
                         </label>
                       </div>
@@ -308,42 +308,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
-                          Q2. The robot showed its learning process:
+                          Q2. The robot was following the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="1" id="radio1-2-1">
-                        <label class="form-check-label" for="radio1-2-1">Very effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="1" id="radio1-2-1">
+                        <label class="form-check-label" for="radio1-2-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="2" id="radio1-2-2">
-                        <label class="form-check-label" for="radio1-2-2">Effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="2" id="radio1-2-2">
+                        <label class="form-check-label" for="radio1-2-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="3" id="radio1-2-3">
-                        <label class="form-check-label" for="radio1-2-3">Moderately effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="3" id="radio1-2-3">
+                        <label class="form-check-label" for="radio1-2-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="4" id="radio1-2-4">
-                        <label class="form-check-label" for="radio1-2-4">Neither effective nor ineffective
+                        <input class="form-check-input" type="radio" name="mimic" value="4" id="radio1-2-4">
+                        <label class="form-check-label" for="radio1-2-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="5" id="radio1-2-5">
-                        <label class="form-check-label" for="radio1-2-5">Moderately ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="5" id="radio1-2-5">
+                        <label class="form-check-label" for="radio1-2-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="6" id="radio1-2-6">
-                        <label class="form-check-label" for="radio1-2-6">Ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="6" id="radio1-2-6">
+                        <label class="form-check-label" for="radio1-2-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="7" id="radio1-2-7">
-                        <label class="form-check-label" for="radio1-2-7">Very ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="7" id="radio1-2-7">
+                        <label class="form-check-label" for="radio1-2-7">Strongly disagree
                         </label>
                       </div>
                     </div>
@@ -353,42 +353,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
-                          Q3. From the robot's performance, I know when it is sufficiently trained:
+                          Q3. How much was the robot engaged in learning the sports skill?
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="1" id="radio1-3-1">
-                        <label class="form-check-label" for="radio1-3-1">Very sure
+                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio1-3-1">
+                        <label class="form-check-label" for="radio1-3-1">Highly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="2" id="radio1-3-2">
-                        <label class="form-check-label" for="radio1-3-2">Moderately sure
+                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio1-3-2">
+                        <label class="form-check-label" for="radio1-3-2">Moderately engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="3" id="radio1-3-3">
-                        <label class="form-check-label" for="radio1-3-3">Slightly sure
+                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio1-3-3">
+                        <label class="form-check-label" for="radio1-3-3">Slightly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="4" id="radio1-3-4">
-                        <label class="form-check-label" for="radio1-3-4">Neither sure nor unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio1-3-4">
+                        <label class="form-check-label" for="radio1-3-4">Neither engaged nor disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="5" id="radio1-3-5">
-                        <label class="form-check-label" for="radio1-3-5">Slightly unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio1-3-5">
+                        <label class="form-check-label" for="radio1-3-5">Slightly disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="6" id="radio1-3-6">
-                        <label class="form-check-label" for="radio1-3-6">Moderately unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio1-3-6">
+                        <label class="form-check-label" for="radio1-3-6">Moderately disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="7" id="radio1-3-7">
-                        <label class="form-check-label" for="radio1-3-7">Very unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio1-3-7">
+                        <label class="form-check-label" for="radio1-3-7">Highly disengaged
                         </label>
                       </div>
                     </div>
@@ -436,6 +436,151 @@
                         <label class="form-check-label" for="radio1-4-7">Very unlikely
                         </label>
                       </div>
+                      <div class="form-group">
+                        <label for="why-1"><h4> Why do you have such feelings? </h4></label>
+                        <textarea class="form-control" rows="2" id="why-1" name="why"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
+                          Q5. The robot's behaviors in the learning process are acceptable.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="1" id="radio1-5-1">
+                        <label class="form-check-label" for="radio1-5-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="2" id="radio1-5-2">
+                        <label class="form-check-label" for="radio1-5-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="3" id="radio1-5-3">
+                        <label class="form-check-label" for="radio1-5-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="4" id="radio1-5-4">
+                        <label class="form-check-label" for="radio1-5-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="5" id="radio1-5-5">
+                        <label class="form-check-label" for="radio1-5-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="6" id="radio1-5-6">
+                        <label class="form-check-label" for="radio1-5-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="7" id="radio1-5-7">
+                        <label class="form-check-label" for="radio1-5-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
+                          Q6. The robot shows its intelligence in learning.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="1" id="radio1-6-1">
+                        <label class="form-check-label" for="radio1-6-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="2" id="radio1-6-2">
+                        <label class="form-check-label" for="radio1-6-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="3" id="radio1-6-3">
+                        <label class="form-check-label" for="radio1-6-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="4" id="radio1-6-4">
+                        <label class="form-check-label" for="radio1-6-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="5" id="radio1-6-5">
+                        <label class="form-check-label" for="radio1-6-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="6" id="radio1-6-6">
+                        <label class="form-check-label" for="radio1-6-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="7" id="radio1-6-7">
+                        <label class="form-check-label" for="radio1-6-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
+                          Q7. Based on the robot's reactions, the coach's demonstration is appropriate for robots to learn.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="1" id="radio1-7-1">
+                        <label class="form-check-label" for="radio1-7-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="2" id="radio1-7-2">
+                        <label class="form-check-label" for="radio1-7-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="3" id="radio1-7-3">
+                        <label class="form-check-label" for="radio1-7-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="4" id="radio1-7-4">
+                        <label class="form-check-label" for="radio1-7-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="5" id="radio1-7-5">
+                        <label class="form-check-label" for="radio1-7-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="6" id="radio1-7-6">
+                        <label class="form-check-label" for="radio1-7-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="7" id="radio1-7-7">
+                        <label class="form-check-label" for="radio1-7-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-danger">
+                    <div class="form-group">
+                      <label for="comments-1"><h4> Any comments on this robot's behavior? </h4></label>
+                      <textarea class="form-control" rows="2" id="comments-1" name="comments"></textarea>
                     </div>
                   </li>
                 </ul>
@@ -443,166 +588,6 @@
 
             </div>
 
-            <h3>Step 3: Learning evaluation</h3>
-            <div class="well">
-              <p style="font-size:16px;">
-                Please expect the robot learning outcome:
-              </p>
-              <!--
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_outcome_1" onclick='videojs("vid_outcome_1").play();'> Check the robot learning outcomes </button>
-              -->
-
-              <div>
-                <form id="panel_question_1_2" style="display: none;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
-                            Q5. From the learning process, this robot has mastered the sports skill in this time. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="1" id="radio1-5-1">
-                          <label class="form-check-label" for="radio1-5-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="2" id="radio1-5-2">
-                          <label class="form-check-label" for="radio1-5-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="3" id="radio1-5-3">
-                          <label class="form-check-label" for="radio1-5-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="4" id="radio1-5-4">
-                          <label class="form-check-label" for="radio1-5-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="5" id="radio1-5-5">
-                          <label class="form-check-label" for="radio1-5-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="6" id="radio1-5-6">
-                          <label class="form-check-label" for="radio1-5-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="7" id="radio1-5-7">
-                          <label class="form-check-label" for="radio1-5-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> Re-watch </button> 
-                            Q6. Based on the learning behaviors, I believe this robot will master the sports skill in the long run if sufficient trainings are provided. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="1" id="radio1-7-1">
-                          <label class="form-check-label" for="radio1-7-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="2" id="radio1-7-2">
-                          <label class="form-check-label" for="radio1-7-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="3" id="radio1-7-3">
-                          <label class="form-check-label" for="radio1-7-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="4" id="radio1-7-4">
-                          <label class="form-check-label" for="radio1-7-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="5" id="radio1-7-5">
-                          <label class="form-check-label" for="radio1-7-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="6" id="radio1-7-6">
-                          <label class="form-check-label" for="radio1-7-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="7" id="radio1-7-7">
-                          <label class="form-check-label" for="radio1-7-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <!--
-                      <li class="list-group-item list-group-item-success">
-                        <div class="form-group">
-                          <div style="display: inline-block;">
-                            <h4> 
-                              Q7. Recall the robot's performance during the training (<button type="button" data-toggle="modal" data-target="#div_sim_1" onclick='videojs("vid_sim_1").play();'> watch the training again </button>), this robot's learning outcome: 
-                            </h4>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="1" id="radio1-6-1">
-                            <label class="form-check-label" for="radio1-6-1">Far exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="2" id="radio1-6-2">
-                            <label class="form-check-label" for="radio1-6-2">Exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="3" id="radio1-6-3">
-                            <label class="form-check-label" for="radio1-6-3">Slightly exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="4" id="radio1-6-4">
-                            <label class="form-check-label" for="radio1-6-4">Meets my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="5" id="radio1-6-5">
-                            <label class="form-check-label" for="radio1-6-5">Slightly short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="6" id="radio1-6-6">
-                            <label class="form-check-label" for="radio1-6-6">Short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="7" id="radio1-6-7">
-                            <label class="form-check-label" for="radio1-6-7">Far short of my expectations
-                            </label>
-                          </div>
-                        </div>
-                      </li>
-                    -->
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <label for="why-1"><h4> Q7. Why do you have such feelings in Q6? </h4></label>
-                        <textarea class="form-control" rows="5" id="why-1" name="why"></textarea>
-                      </div>
-                    </li>
-                  </ul>
-                </form>
-
-              </div>
-
-            </div>
           </div>
         </div>
 
@@ -622,7 +607,7 @@
           <div class="col-xs-3">
             <h3 align="center">Team Member #2 </h3>
             <div class="thumbnail">
-              <img src="member-2.png" alt="Lights" style="width:100%">
+              <img id="thumbnail-2-2" alt="Lights" style="width:100%">
             </div>
           </div>
           <div class="col-xs-9">
@@ -679,41 +664,41 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
-                          Q1. The robot was engaged in learning the sports skill.
+                          Q1. The robot was paying attention to the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio2-1-1">
+                        <input class="form-check-input" type="radio" name="attention" value="1" id="radio2-1-1">
                         <label class="form-check-label" for="radio2-1-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio2-1-2">
+                        <input class="form-check-input" type="radio" name="attention" value="2" id="radio2-1-2">
                         <label class="form-check-label" for="radio2-1-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio2-1-3">
+                        <input class="form-check-input" type="radio" name="attention" value="3" id="radio2-1-3">
                         <label class="form-check-label" for="radio2-1-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio2-1-4">
+                        <input class="form-check-input" type="radio" name="attention" value="4" id="radio2-1-4">
                         <label class="form-check-label" for="radio2-1-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio2-1-5">
+                        <input class="form-check-input" type="radio" name="attention" value="5" id="radio2-1-5">
                         <label class="form-check-label" for="radio2-1-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio2-1-6">
+                        <input class="form-check-input" type="radio" name="attention" value="6" id="radio2-1-6">
                         <label class="form-check-label" for="radio2-1-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio2-1-7">
+                        <input class="form-check-input" type="radio" name="attention" value="7" id="radio2-1-7">
                         <label class="form-check-label" for="radio2-1-7">Strongly disagree
                         </label>
                       </div>
@@ -724,42 +709,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
-                          Q2. The robot showed its learning process:
+                          Q2. The robot was following the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="1" id="radio2-2-1">
-                        <label class="form-check-label" for="radio2-2-1">Very effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="1" id="radio2-2-1">
+                        <label class="form-check-label" for="radio2-2-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="2" id="radio2-2-2">
-                        <label class="form-check-label" for="radio2-2-2">Effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="2" id="radio2-2-2">
+                        <label class="form-check-label" for="radio2-2-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="3" id="radio2-2-3">
-                        <label class="form-check-label" for="radio2-2-3">Moderately effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="3" id="radio2-2-3">
+                        <label class="form-check-label" for="radio2-2-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="4" id="radio2-2-4">
-                        <label class="form-check-label" for="radio2-2-4">Neither effective nor ineffective
+                        <input class="form-check-input" type="radio" name="mimic" value="4" id="radio2-2-4">
+                        <label class="form-check-label" for="radio2-2-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="5" id="radio2-2-5">
-                        <label class="form-check-label" for="radio2-2-5">Moderately ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="5" id="radio2-2-5">
+                        <label class="form-check-label" for="radio2-2-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="6" id="radio2-2-6">
-                        <label class="form-check-label" for="radio2-2-6">Ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="6" id="radio2-2-6">
+                        <label class="form-check-label" for="radio2-2-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="7" id="radio2-2-7">
-                        <label class="form-check-label" for="radio2-2-7">Very ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="7" id="radio2-2-7">
+                        <label class="form-check-label" for="radio2-2-7">Strongly disagree
                         </label>
                       </div>
                     </div>
@@ -769,42 +754,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
-                          Q3. From the robot's performance, I know when it is sufficiently trained:
+                          Q3. How much was the robot engaged in learning the sports skill?
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="1" id="radio2-3-1">
-                        <label class="form-check-label" for="radio2-3-1">Very sure 
+                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio2-3-1">
+                        <label class="form-check-label" for="radio2-3-1">Highly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="2" id="radio2-3-2">
-                        <label class="form-check-label" for="radio2-3-2">Moderately sure
+                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio2-3-2">
+                        <label class="form-check-label" for="radio2-3-2">Moderately engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="3" id="radio2-3-3">
-                        <label class="form-check-label" for="radio2-3-3">Slightly sure
+                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio2-3-3">
+                        <label class="form-check-label" for="radio2-3-3">Slightly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="4" id="radio2-3-4">
-                        <label class="form-check-label" for="radio2-3-4">Neither sure nor unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio2-3-4">
+                        <label class="form-check-label" for="radio2-3-4">Neither engaged nor disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="5" id="radio2-3-5">
-                        <label class="form-check-label" for="radio2-3-5">Slightly unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio2-3-5">
+                        <label class="form-check-label" for="radio2-3-5">Slightly disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="6" id="radio2-3-6">
-                        <label class="form-check-label" for="radio2-3-6">Moderately unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio2-3-6">
+                        <label class="form-check-label" for="radio2-3-6">Moderately disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="7" id="radio2-3-7">
-                        <label class="form-check-label" for="radio2-3-7">Very unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio2-3-7">
+                        <label class="form-check-label" for="radio2-3-7">Highly disengaged
                         </label>
                       </div>
                     </div>
@@ -852,173 +837,156 @@
                         <label class="form-check-label" for="radio2-4-7">Very unlikely
                         </label>
                       </div>
+                      <div class="form-group">
+                        <label for="why-2"><h4> Why do you have such feelings? </h4></label>
+                        <textarea class="form-control" rows="2" id="why-2" name="why"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
+                          Q5. The robot's behaviors in the learning process are acceptable.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="1" id="radio2-5-1">
+                        <label class="form-check-label" for="radio2-5-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="2" id="radio2-5-2">
+                        <label class="form-check-label" for="radio2-5-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="3" id="radio2-5-3">
+                        <label class="form-check-label" for="radio2-5-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="4" id="radio2-5-4">
+                        <label class="form-check-label" for="radio2-5-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="5" id="radio2-5-5">
+                        <label class="form-check-label" for="radio2-5-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="6" id="radio2-5-6">
+                        <label class="form-check-label" for="radio2-5-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="7" id="radio2-5-7">
+                        <label class="form-check-label" for="radio2-5-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
+                          Q6. The robot shows its intelligence in learning.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="1" id="radio2-6-1">
+                        <label class="form-check-label" for="radio2-6-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="2" id="radio2-6-2">
+                        <label class="form-check-label" for="radio2-6-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="3" id="radio2-6-3">
+                        <label class="form-check-label" for="radio2-6-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="4" id="radio2-6-4">
+                        <label class="form-check-label" for="radio2-6-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="5" id="radio2-6-5">
+                        <label class="form-check-label" for="radio2-6-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="6" id="radio2-6-6">
+                        <label class="form-check-label" for="radio2-6-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="7" id="radio2-6-7">
+                        <label class="form-check-label" for="radio2-6-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
+                          Q7. Based on the robot's reactions, the coach's demonstration is appropriate for robots to learn.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="1" id="radio2-7-1">
+                        <label class="form-check-label" for="radio2-7-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="2" id="radio2-7-2">
+                        <label class="form-check-label" for="radio2-7-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="3" id="radio2-7-3">
+                        <label class="form-check-label" for="radio2-7-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="4" id="radio2-7-4">
+                        <label class="form-check-label" for="radio2-7-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="5" id="radio2-7-5">
+                        <label class="form-check-label" for="radio2-7-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="6" id="radio2-7-6">
+                        <label class="form-check-label" for="radio2-7-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="7" id="radio2-7-7">
+                        <label class="form-check-label" for="radio2-7-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-danger">
+                    <div class="form-group">
+                      <label for="comments-2"><h4> Any comments on this robot's behavior? </h4></label>
+                      <textarea class="form-control" rows="2" id="comments-2" name="comments"></textarea>
                     </div>
                   </li>
                 </ul>
               </form>
               </div>
-
-            </div>
-
-            <h3>Step 3: Learning evaluation</h3>
-            <div class="well">
-              <p style="font-size:16px;">
-                Please evaluate the robot's learning abilities
-              </p>
-              <!--
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_outcome_2" onclick='videojs("vid_outcome_2").play();'> Check the robot learning outcomes </button>
-              -->
-
-              <div>
-
-                <form id="panel_question_2_2" style="display: none;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
-                            Q5. From the learning process, this robot has already mastered the sports skill. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="1" id="radio2-5-1">
-                          <label class="form-check-label" for="radio2-5-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="2" id="radio2-5-2">
-                          <label class="form-check-label" for="radio2-5-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="3" id="radio2-5-3">
-                          <label class="form-check-label" for="radio2-5-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="4" id="radio2-5-4">
-                          <label class="form-check-label" for="radio2-5-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="5" id="radio2-5-5">
-                          <label class="form-check-label" for="radio2-5-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="6" id="radio2-5-6">
-                          <label class="form-check-label" for="radio2-5-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="7" id="radio2-5-7">
-                          <label class="form-check-label" for="radio2-5-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> Re-watch </button> 
-                            Q6. From the learning behaviors, this robot can fully master the sports skill in the long run if sufficient trainings are provided. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="1" id="radio2-7-1">
-                          <label class="form-check-label" for="radio2-7-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="2" id="radio2-7-2">
-                          <label class="form-check-label" for="radio2-7-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="3" id="radio2-7-3">
-                          <label class="form-check-label" for="radio2-7-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="4" id="radio2-7-4">
-                          <label class="form-check-label" for="radio2-7-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="5" id="radio2-7-5">
-                          <label class="form-check-label" for="radio2-7-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="6" id="radio2-7-6">
-                          <label class="form-check-label" for="radio2-7-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="7" id="radio2-7-7">
-                          <label class="form-check-label" for="radio2-7-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <!--
-                      <li class="list-group-item list-group-item-success">
-                        <div class="form-group">
-                          <div style="display: inline-block;">
-                            <h4> 
-                              Q6. Recall the robot's performance during the training (<button type="button" data-toggle="modal" data-target="#div_sim_2" onclick='videojs("vid_sim_2").play();'> watch the training again </button>), this robot's learning outcome: 
-                            </h4>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="1" id="radio2-6-1">
-                            <label class="form-check-label" for="radio2-6-1">Far exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="2" id="radio2-6-2">
-                            <label class="form-check-label" for="radio2-6-2">Exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="3" id="radio2-6-3">
-                            <label class="form-check-label" for="radio2-6-3">Slightly exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="4" id="radio2-6-4">
-                            <label class="form-check-label" for="radio2-6-4">Meets my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="5" id="radio2-6-5">
-                            <label class="form-check-label" for="radio2-6-5">Slightly short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="6" id="radio2-6-6">
-                            <label class="form-check-label" for="radio2-6-6">Short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="7" id="radio2-6-7">
-                            <label class="form-check-label" for="radio2-6-7">Far short of my expectations
-                            </label>
-                          </div>
-                        </div>
-                      </li>
-                    -->
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <label for="why-2"><h4> Q7. Why do you have such feelings in Q6? </h4></label>
-                        <textarea class="form-control" rows="5" id="why-2" name="why"></textarea>
-                      </div>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-
             </div>
           </div>
         </div>
@@ -1039,7 +1007,7 @@
           <div class="col-xs-3">
             <h3 align="center">Team Member #3 </h3>
             <div class="thumbnail">
-              <img src="member-3.png" alt="Lights" style="width:100%">
+              <img id="thumbnail-3-3" alt="Lights" style="width:100%">
             </div>
           </div>
           <div class="col-xs-9">
@@ -1094,41 +1062,41 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
-                          Q1. The robot was engaged in learning the sports skill.
+                          Q1. The robot was paying attention to the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio3-1-1">
+                        <input class="form-check-input" type="radio" name="attention" value="1" id="radio3-1-1">
                         <label class="form-check-label" for="radio3-1-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio3-1-2">
+                        <input class="form-check-input" type="radio" name="attention" value="2" id="radio3-1-2">
                         <label class="form-check-label" for="radio3-1-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio3-1-3">
+                        <input class="form-check-input" type="radio" name="attention" value="3" id="radio3-1-3">
                         <label class="form-check-label" for="radio3-1-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio3-1-4">
+                        <input class="form-check-input" type="radio" name="attention" value="4" id="radio3-1-4">
                         <label class="form-check-label" for="radio3-1-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio3-1-5">
+                        <input class="form-check-input" type="radio" name="attention" value="5" id="radio3-1-5">
                         <label class="form-check-label" for="radio3-1-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio3-1-6">
+                        <input class="form-check-input" type="radio" name="attention" value="6" id="radio3-1-6">
                         <label class="form-check-label" for="radio3-1-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio3-1-7">
+                        <input class="form-check-input" type="radio" name="attention" value="7" id="radio3-1-7">
                         <label class="form-check-label" for="radio3-1-7">Strongly disagree
                         </label>
                       </div>
@@ -1139,42 +1107,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
-                          Q2. The robot showed its learning process:
+                          Q2. The robot was following the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="1" id="radio3-2-1">
-                        <label class="form-check-label" for="radio3-2-1">Very effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="1" id="radio3-2-1">
+                        <label class="form-check-label" for="radio3-2-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="2" id="radio3-2-2">
-                        <label class="form-check-label" for="radio3-2-2">Effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="2" id="radio3-2-2">
+                        <label class="form-check-label" for="radio3-2-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="3" id="radio3-2-3">
-                        <label class="form-check-label" for="radio3-2-3">Moderately effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="3" id="radio3-2-3">
+                        <label class="form-check-label" for="radio3-2-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="4" id="radio3-2-4">
-                        <label class="form-check-label" for="radio3-2-4">Neither effective nor ineffective
+                        <input class="form-check-input" type="radio" name="mimic" value="4" id="radio3-2-4">
+                        <label class="form-check-label" for="radio3-2-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="5" id="radio3-2-5">
-                        <label class="form-check-label" for="radio3-2-5">Moderately ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="5" id="radio3-2-5">
+                        <label class="form-check-label" for="radio3-2-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="6" id="radio3-2-6">
-                        <label class="form-check-label" for="radio3-2-6">Ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="6" id="radio3-2-6">
+                        <label class="form-check-label" for="radio3-2-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="7" id="radio3-2-7">
-                        <label class="form-check-label" for="radio3-2-7">Very ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="7" id="radio3-2-7">
+                        <label class="form-check-label" for="radio3-2-7">Strongly disagree
                         </label>
                       </div>
                     </div>
@@ -1184,42 +1152,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
-                          Q3. From the robot's performance, I know when it is sufficiently trained:
+                          Q3. How much was the robot engaged in learning the sports skill?
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="1" id="radio3-3-1">
-                        <label class="form-check-label" for="radio3-3-1">Very sure
+                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio3-3-1">
+                        <label class="form-check-label" for="radio3-3-1">Highly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="2" id="radio3-3-2">
-                        <label class="form-check-label" for="radio3-3-2">Moderately sure
+                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio3-3-2">
+                        <label class="form-check-label" for="radio3-3-2">Moderately engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="3" id="radio3-3-3">
-                        <label class="form-check-label" for="radio3-3-3">Slightly sure
+                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio3-3-3">
+                        <label class="form-check-label" for="radio3-3-3">Slightly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="4" id="radio3-3-4">
-                        <label class="form-check-label" for="radio3-3-4">Neither sure nor unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio3-3-4">
+                        <label class="form-check-label" for="radio3-3-4">Neither engaged nor disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="5" id="radio3-3-5">
-                        <label class="form-check-label" for="radio3-3-5">Slightly unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio3-3-5">
+                        <label class="form-check-label" for="radio3-3-5">Slightly disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="6" id="radio3-3-6">
-                        <label class="form-check-label" for="radio3-3-6">Moderately unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio3-3-6">
+                        <label class="form-check-label" for="radio3-3-6">Moderately disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="7" id="radio3-3-7">
-                        <label class="form-check-label" for="radio3-3-7">Very unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio3-3-7">
+                        <label class="form-check-label" for="radio3-3-7">Highly disengaged
                         </label>
                       </div>
                     </div>
@@ -1267,171 +1235,155 @@
                         <label class="form-check-label" for="radio3-4-7">Very unlikely
                         </label>
                       </div>
+                      <div class="form-group">
+                        <label for="why-3"><h4> Why do you have such feelings? </h4></label>
+                        <textarea class="form-control" rows="2" id="why-3" name="why"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
+                          Q5. The robot's behaviors in the learning process are acceptable.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="1" id="radio3-5-1">
+                        <label class="form-check-label" for="radio3-5-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="2" id="radio3-5-2">
+                        <label class="form-check-label" for="radio3-5-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="3" id="radio3-5-3">
+                        <label class="form-check-label" for="radio3-5-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="4" id="radio3-5-4">
+                        <label class="form-check-label" for="radio3-5-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="5" id="radio3-5-5">
+                        <label class="form-check-label" for="radio3-5-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="6" id="radio3-5-6">
+                        <label class="form-check-label" for="radio3-5-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="7" id="radio3-5-7">
+                        <label class="form-check-label" for="radio3-5-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
+                          Q6. The robot shows its intelligence in learning.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="1" id="radio3-6-1">
+                        <label class="form-check-label" for="radio3-6-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="2" id="radio3-6-2">
+                        <label class="form-check-label" for="radio3-6-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="3" id="radio3-6-3">
+                        <label class="form-check-label" for="radio3-6-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="4" id="radio3-6-4">
+                        <label class="form-check-label" for="radio3-6-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="5" id="radio3-6-5">
+                        <label class="form-check-label" for="radio3-6-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="6" id="radio3-6-6">
+                        <label class="form-check-label" for="radio3-6-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="7" id="radio3-6-7">
+                        <label class="form-check-label" for="radio3-6-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
+                          Q7. Based on the robot's reactions, the coach's demonstration is appropriate for robots to learn.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="1" id="radio3-7-1">
+                        <label class="form-check-label" for="radio3-7-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="2" id="radio3-7-2">
+                        <label class="form-check-label" for="radio3-7-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="3" id="radio3-7-3">
+                        <label class="form-check-label" for="radio3-7-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="4" id="radio3-7-4">
+                        <label class="form-check-label" for="radio3-7-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="5" id="radio3-7-5">
+                        <label class="form-check-label" for="radio3-7-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="6" id="radio3-7-6">
+                        <label class="form-check-label" for="radio3-7-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="7" id="radio3-7-7">
+                        <label class="form-check-label" for="radio3-7-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-danger">
+                    <div class="form-group">
+                      <label for="comments-3"><h4> Any comments on this robot's behavior? </h4></label>
+                      <textarea class="form-control" rows="2" id="comments-3" name="comments"></textarea>
                     </div>
                   </li>
                 </ul>
               </form>
-
-              </div>
-
-            </div>
-
-            <h3>Step 3: Learning evaluation</h3>
-            <div class="well">
-              <p style="font-size:16px;">
-                Please evaluate the robot's learning abilities
-              </p>
-              <!--
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_outcome_3" onclick='videojs("vid_outcome_3").play();'> Check the robot learning outcomes </button>
-              -->
-
-              <div >
-                <form id="panel_question_3_2" style="display: none;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
-                            Q5. From the learning process, this robot has already mastered the sports skill. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="1" id="radio3-5-1">
-                          <label class="form-check-label" for="radio3-5-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="2" id="radio3-5-2">
-                          <label class="form-check-label" for="radio3-5-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="3" id="radio3-5-3">
-                          <label class="form-check-label" for="radio3-5-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="4" id="radio3-5-4">
-                          <label class="form-check-label" for="radio3-5-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="5" id="radio3-5-5">
-                          <label class="form-check-label" for="radio3-5-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="6" id="radio3-5-6">
-                          <label class="form-check-label" for="radio3-5-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="7" id="radio3-5-7">
-                          <label class="form-check-label" for="radio3-5-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> Re-watch </button> 
-                            Q6. From the learning behaviors and outcome, this robot can fully master the sports skill in the long run if sufficient trainings are provided. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="1" id="radio3-7-1">
-                          <label class="form-check-label" for="radio3-7-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="2" id="radio3-7-2">
-                          <label class="form-check-label" for="radio3-7-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="3" id="radio3-7-3">
-                          <label class="form-check-label" for="radio3-7-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="4" id="radio3-7-4">
-                          <label class="form-check-label" for="radio3-7-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="5" id="radio3-7-5">
-                          <label class="form-check-label" for="radio3-7-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="6" id="radio3-7-6">
-                          <label class="form-check-label" for="radio3-7-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="7" id="radio3-7-7">
-                          <label class="form-check-label" for="radio3-7-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <!--
-                      <li class="list-group-item list-group-item-success">
-                        <div class="form-group">
-                          <div style="display: inline-block;">
-                            <h4> 
-                              Q6. Recall the robot's performance during the training (<button type="button" data-toggle="modal" data-target="#div_sim_3" onclick='videojs("vid_sim_3").play();'> watch the training again </button>), this robot's learning outcome: 
-                            </h4>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="1" id="radio3-6-1">
-                            <label class="form-check-label" for="radio3-6-1">Far exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="2" id="radio3-6-2">
-                            <label class="form-check-label" for="radio3-6-2">Exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="3" id="radio3-6-3">
-                            <label class="form-check-label" for="radio3-6-3">Slightly exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="4" id="radio3-6-4">
-                            <label class="form-check-label" for="radio3-6-4">Meets my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="5" id="radio3-6-5">
-                            <label class="form-check-label" for="radio3-6-5">Slightly short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="6" id="radio3-6-6">
-                            <label class="form-check-label" for="radio3-6-6">Short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="7" id="radio3-6-7">
-                            <label class="form-check-label" for="radio3-6-7">Far short of my expectations
-                            </label>
-                          </div>
-                        </div>
-                      </li>
-                    -->
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <label for="why-3"><h4> Q7. Why do you have such feelings in Q6? </h4></label>
-                        <textarea class="form-control" rows="5" id="why-3" name="why"></textarea>
-                      </div>
-                    </li>
-                  </ul>
-                </form>
               </div>
 
             </div>
@@ -1454,7 +1406,7 @@
           <div class="col-xs-3">
             <h3 align="center">Team Member #4 </h3>
             <div class="thumbnail">
-              <img src="member-4.png" alt="Lights" style="width:100%">
+              <img id="thumbnail-4-4" alt="Lights" style="width:100%">
             </div>
           </div>
           <div class="col-xs-9">
@@ -1502,7 +1454,6 @@
               </p> 
 
               <div>
-
               <form id="panel_question_4_1" style="display: none;">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item list-group-item-info">
@@ -1510,41 +1461,41 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
-                          Q1. The robot was engaged in learning the sports skill.
+                          Q1. The robot was paying attention to the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio4-1-1">
+                        <input class="form-check-input" type="radio" name="attention" value="1" id="radio4-1-1">
                         <label class="form-check-label" for="radio4-1-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio4-1-2">
+                        <input class="form-check-input" type="radio" name="attention" value="2" id="radio4-1-2">
                         <label class="form-check-label" for="radio4-1-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio4-1-3">
+                        <input class="form-check-input" type="radio" name="attention" value="3" id="radio4-1-3">
                         <label class="form-check-label" for="radio4-1-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio4-1-4">
+                        <input class="form-check-input" type="radio" name="attention" value="4" id="radio4-1-4">
                         <label class="form-check-label" for="radio4-1-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio4-1-5">
+                        <input class="form-check-input" type="radio" name="attention" value="5" id="radio4-1-5">
                         <label class="form-check-label" for="radio4-1-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio4-1-6">
+                        <input class="form-check-input" type="radio" name="attention" value="6" id="radio4-1-6">
                         <label class="form-check-label" for="radio4-1-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio4-1-7">
+                        <input class="form-check-input" type="radio" name="attention" value="7" id="radio4-1-7">
                         <label class="form-check-label" for="radio4-1-7">Strongly disagree
                         </label>
                       </div>
@@ -1555,42 +1506,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
-                          Q2. The robot showed its learning process:
+                          Q2. The robot was following the coach's demonstration.
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="1" id="radio4-2-1">
-                        <label class="form-check-label" for="radio4-2-1">Very effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="1" id="radio4-2-1">
+                        <label class="form-check-label" for="radio4-2-1">Strongly agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="2" id="radio4-2-2">
-                        <label class="form-check-label" for="radio4-2-2">Effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="2" id="radio4-2-2">
+                        <label class="form-check-label" for="radio4-2-2">Agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="3" id="radio4-2-3">
-                        <label class="form-check-label" for="radio4-2-3">Moderately effectively
+                        <input class="form-check-input" type="radio" name="mimic" value="3" id="radio4-2-3">
+                        <label class="form-check-label" for="radio4-2-3">Somewhat agree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="4" id="radio4-2-4">
-                        <label class="form-check-label" for="radio4-2-4">Neither effective nor ineffective
+                        <input class="form-check-input" type="radio" name="mimic" value="4" id="radio4-2-4">
+                        <label class="form-check-label" for="radio4-2-4">Neither agree nor disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="5" id="radio4-2-5">
-                        <label class="form-check-label" for="radio4-2-5">Moderately ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="5" id="radio4-2-5">
+                        <label class="form-check-label" for="radio4-2-5">Somewhat disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="6" id="radio4-2-6">
-                        <label class="form-check-label" for="radio4-2-6">Ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="6" id="radio4-2-6">
+                        <label class="form-check-label" for="radio4-2-6">Disagree
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="learning" value="7" id="radio4-2-7">
-                        <label class="form-check-label" for="radio4-2-7">Very ineffectively
+                        <input class="form-check-input" type="radio" name="mimic" value="7" id="radio4-2-7">
+                        <label class="form-check-label" for="radio4-2-7">Strongly disagree
                         </label>
                       </div>
                     </div>
@@ -1600,42 +1551,42 @@
                       <div style="display: inline-block;">
                         <h4> 
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
-                          Q3. From the robot's performance, I know when it is sufficiently trained:
+                          Q3. How much was the robot engaged in learning the sports skill?
                         </h4>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="1" id="radio4-3-1">
-                        <label class="form-check-label" for="radio4-3-1">Very sure
+                        <input class="form-check-input" type="radio" name="engagement" value="1" id="radio4-3-1">
+                        <label class="form-check-label" for="radio4-3-1">Highly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="2" id="radio4-3-2">
-                        <label class="form-check-label" for="radio4-3-2">Moderately sure
+                        <input class="form-check-input" type="radio" name="engagement" value="2" id="radio4-3-2">
+                        <label class="form-check-label" for="radio4-3-2">Moderately engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="3" id="radio4-3-3">
-                        <label class="form-check-label" for="radio4-3-3">Slightly sure
+                        <input class="form-check-input" type="radio" name="engagement" value="3" id="radio4-3-3">
+                        <label class="form-check-label" for="radio4-3-3">Slightly engaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="4" id="radio4-3-4">
-                        <label class="form-check-label" for="radio4-3-4">Neither sure nor unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="4" id="radio4-3-4">
+                        <label class="form-check-label" for="radio4-3-4">Neither engaged nor disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="5" id="radio4-3-5">
-                        <label class="form-check-label" for="radio4-3-5">Slightly unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="5" id="radio4-3-5">
+                        <label class="form-check-label" for="radio4-3-5">Slightly disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="6" id="radio4-3-6">
-                        <label class="form-check-label" for="radio4-3-6">Moderately unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="6" id="radio4-3-6">
+                        <label class="form-check-label" for="radio4-3-6">Moderately disengaged
                         </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="terminate" value="7" id="radio4-3-7">
-                        <label class="form-check-label" for="radio4-3-7">Very unsure
+                        <input class="form-check-input" type="radio" name="engagement" value="7" id="radio4-3-7">
+                        <label class="form-check-label" for="radio4-3-7">Highly disengaged
                         </label>
                       </div>
                     </div>
@@ -1683,172 +1634,156 @@
                         <label class="form-check-label" for="radio4-4-7">Very unlikely
                         </label>
                       </div>
+                      <div class="form-group">
+                        <label for="why-4"><h4> Why do you have such feelings? </h4></label>
+                        <textarea class="form-control" rows="2" id="why-4" name="why"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
+                          Q5. The robot's behaviors in the learning process are acceptable.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="1" id="radio4-5-1">
+                        <label class="form-check-label" for="radio4-5-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="2" id="radio4-5-2">
+                        <label class="form-check-label" for="radio4-5-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="3" id="radio4-5-3">
+                        <label class="form-check-label" for="radio4-5-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="4" id="radio4-5-4">
+                        <label class="form-check-label" for="radio4-5-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="5" id="radio4-5-5">
+                        <label class="form-check-label" for="radio4-5-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="6" id="radio4-5-6">
+                        <label class="form-check-label" for="radio4-5-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="acceptable" value="7" id="radio4-5-7">
+                        <label class="form-check-label" for="radio4-5-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
+                          Q6. The robot shows its intelligence in learning.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="1" id="radio4-6-1">
+                        <label class="form-check-label" for="radio4-6-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="2" id="radio4-6-2">
+                        <label class="form-check-label" for="radio4-6-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="3" id="radio4-6-3">
+                        <label class="form-check-label" for="radio4-6-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="4" id="radio4-6-4">
+                        <label class="form-check-label" for="radio4-6-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="5" id="radio4-6-5">
+                        <label class="form-check-label" for="radio4-6-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="6" id="radio4-6-6">
+                        <label class="form-check-label" for="radio4-6-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="intelligence" value="7" id="radio4-6-7">
+                        <label class="form-check-label" for="radio4-6-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <div class="form-group">
+                      <div style="display: inline-block;">
+                        <h4> 
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
+                          Q7. Based on the robot's reactions, the coach's demonstration is appropriate for robots to learn.
+                        </h4>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="1" id="radio4-7-1">
+                        <label class="form-check-label" for="radio4-7-1">Strongly agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="2" id="radio4-7-2">
+                        <label class="form-check-label" for="radio4-7-2">Agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="3" id="radio4-7-3">
+                        <label class="form-check-label" for="radio4-7-3">Somewhat agree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="4" id="radio4-7-4">
+                        <label class="form-check-label" for="radio4-7-4">Neither agree nor disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="5" id="radio4-7-5">
+                        <label class="form-check-label" for="radio4-7-5">Somewhat disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="6" id="radio4-7-6">
+                        <label class="form-check-label" for="radio4-7-6">Disagree
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="demonstration" value="7" id="radio4-7-7">
+                        <label class="form-check-label" for="radio4-7-7">Strongly disagree
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-danger">
+                    <div class="form-group">
+                      <label for="comments-4"><h4> Any comments on this robot's behavior? </h4></label>
+                      <textarea class="form-control" rows="2" id="comments-4" name="comments"></textarea>
                     </div>
                   </li>
                 </ul>
               </form>
               </div>
-
-            </div>
-
-            <h3>Step 3: Learning evaluation</h3>
-            <div class="well">
-              <p style="font-size:16px;">
-                Please evaluate the robot's learning abilities
-              </p>
-              <!--
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#div_outcome_4" onclick='videojs("vid_outcome_4").play();'> Check the robot learning outcomes </button>
-              -->
-
-              <div>
-                <form id="panel_question_4_2" style="display: none;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
-                            Q5. From the learning process, this robot has already mastered the sports skill. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="1" id="radio4-5-1">
-                          <label class="form-check-label" for="radio4-5-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="2" id="radio4-5-2">
-                          <label class="form-check-label" for="radio4-5-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="3" id="radio4-5-3">
-                          <label class="form-check-label" for="radio4-5-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="4" id="radio4-5-4">
-                          <label class="form-check-label" for="radio4-5-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="5" id="radio4-5-5">
-                          <label class="form-check-label" for="radio4-5-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="6" id="radio4-5-6">
-                          <label class="form-check-label" for="radio4-5-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="outcome" value="7" id="radio4-5-7">
-                          <label class="form-check-label" for="radio4-5-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-item-success">
-                      <div class="form-group">
-                        <div style="display: inline-block;">
-                          <h4> 
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> Re-watch </button> 
-                            Q6. From the learning behaviors, this robot will master the sports skill in the long run if sufficient trainings are provided. 
-                          </h4>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="1" id="radio4-7-1">
-                          <label class="form-check-label" for="radio4-7-1">Strongly agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="2" id="radio4-7-2">
-                          <label class="form-check-label" for="radio4-7-2">Agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="3" id="radio4-7-3">
-                          <label class="form-check-label" for="radio4-7-3">Somewhat agree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="4" id="radio4-7-4">
-                          <label class="form-check-label" for="radio4-7-4">Neither agree nor disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="5" id="radio4-7-5">
-                          <label class="form-check-label" for="radio4-7-5">Somewhat disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="6" id="radio4-7-6">
-                          <label class="form-check-label" for="radio4-7-6">Disagree
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="confidence" value="7" id="radio4-7-7">
-                          <label class="form-check-label" for="radio4-7-7">Strongly disagree
-                          </label>
-                        </div>
-                      </div>
-                    </li>
-                    <!--
-                      <li class="list-group-item list-group-item-success">
-                        <div class="form-group">
-                          <div style="display: inline-block;">
-                            <h4> 
-                              Q6. Recall the robot's performance during the training (<button type="button" data-toggle="modal" data-target="#div_sim_4" onclick='videojs("vid_sim_4").play();'> watch the training again </button>), this robot's learning outcome: 
-                            </h4>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="1" id="radio4-6-1">
-                            <label class="form-check-label" for="radio4-6-1">Far exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="2" id="radio4-6-2">
-                            <label class="form-check-label" for="radio4-6-2">Exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="3" id="radio4-6-3">
-                            <label class="form-check-label" for="radio4-6-3">Slightly exceeds my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="4" id="radio4-6-4">
-                            <label class="form-check-label" for="radio4-6-4">Meets my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="5" id="radio4-6-5">
-                            <label class="form-check-label" for="radio4-6-5">Slightly short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="6" id="radio4-6-6">
-                            <label class="form-check-label" for="radio4-6-6">Short of my expectations
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="expectation" value="7" id="radio4-6-7">
-                            <label class="form-check-label" for="radio4-6-7">Far short of my expectations
-                            </label>
-                          </div>
-                        </div>
-                      </li>
-                    -->
-                    <li class="list-group-item list-group-item-info">
-                      <div class="form-group">
-                        <label for="why-4"><h4> Q7. Why do you have such feelings in Q6? </h4></label>
-                        <textarea class="form-control" rows="5" id="why-4" name="why"></textarea>
-                      </div>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-
             </div>
           </div>
         </div>
@@ -1894,7 +1829,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title" id="modal-sim-1">The robot learns the sports skill</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_1_1').style.display = 'block';document.getElementById('panel_question_1_2').style.display = 'block';">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_1_1').style.display = 'block';">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -1908,34 +1843,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_1_1').style.display = 'block';document.getElementById('panel_question_1_2').style.display = 'block';">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_1_1').style.display = 'block';">Close</button>
             <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_1").play();'>Watch again</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal" id="div_outcome_1" tabindex="-1" role="dialog" aria-labelledby="modal-outcome-1" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="modal-outcome-1">The robot learns the sports skill</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_1_2').style.display = 'block';">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" align="center">
-            <div class="container-fluid">
-              <video id="vid_outcome_1" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-                <!--
-                  <source src="test.mp4" type='video/mp4'>
-                -->
-              </video>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_1_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_1").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -1970,7 +1879,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modal-sim-2">Teaching</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_2_1').style.display = 'block';document.getElementById('panel_question_2_2').style.display = 'block';">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_2_1').style.display = 'block';">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -1984,33 +1893,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_2_1').style.display = 'block';document.getElementById('panel_question_2_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_2").play();'>Watch again</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal" id="div_outcome_2" tabindex="-1" role="dialog" aria-labelledby="modal-outcome-2" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-outcome-2">Teaching</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_2_2').style.display = 'block';">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" align="center">
-            <div class="container-fluid">
-              <video id="vid_outcome_2" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-                <!--
-                  <source src="test.mp4" type='video/mp4'>
-                -->
-              </video>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_2_2').style.display = 'block';">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_2_1').style.display = 'block';">Close</button>
             <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_2").play();'>Watch again</button>
           </div>
         </div>
@@ -2046,7 +1929,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modal-sim-3">Teaching</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_3_1').style.display = 'block';document.getElementById('panel_question_3_2').style.display = 'block';">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_3_1').style.display = 'block';">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -2058,32 +1941,8 @@
             </video>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_3_1').style.display = 'block';document.getElementById('panel_question_3_2').style.display = 'block';">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_3_1').style.display = 'block';">Close</button>
             <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_3").play();'>Watch again</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal" id="div_outcome_3" tabindex="-1" role="dialog" aria-labelledby="modal-outcome-3" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-outcome-3">Teaching</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_3_2').style.display = 'block';">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" align="center">
-            <video id="vid_outcome_3" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-              <!--
-                <source src="test.mp4" type='video/mp4'>
-              -->
-            </video>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_3_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_3").play();'>Watch again</button>
           </div>
         </div>
       </div>
@@ -2118,7 +1977,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modal-sim-4">Teaching</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_4_1').style.display = 'block';document.getElementById('panel_question_4_2').style.display = 'block';">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_4_1').style.display = 'block';">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -2130,37 +1989,12 @@
             </video>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_4_1').style.display = 'block';document.getElementById('panel_question_4_2').style.display = 'block';">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_4_1').style.display = 'block';">Close</button>
             <button type="button" class="btn btn-primary" onclick='videojs("vid_sim_4").play();'>Watch again</button>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="modal" id="div_outcome_4" tabindex="-1" role="dialog" aria-labelledby="modal-outcome-4" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-outcome-4">Teaching</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('panel_question_4_2').style.display = 'block'; ">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" align="center">
-            <video id="vid_outcome_4" class="video-js" preload="auto" width="1027" height="600" poster="test.jpg" data-setup='{"controls": false}'>
-              <!--
-                <source src="test.mp4" type='video/mp4'>
-              -->
-            </video>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('panel_question_4_2').style.display = 'block';">Close</button>
-            <button type="button" class="btn btn-primary" onclick='videojs("vid_outcome_4").play();'>Watch again</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     <div class="modal" id="finishModal" tabindex="-1" role="dialog" aria-labelledby="finishModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
