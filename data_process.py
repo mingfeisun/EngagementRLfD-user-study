@@ -104,11 +104,11 @@ import os
 # data.to_csv("output.csv", index=False, sep='\t', encoding="utf-8")
  # version 3
 frame = pd.DataFrame()
-
-for filename in os.listdir(os.getcwd()):
+path  = os.getcwd() + '\data' + '\\valid'
+for filename in os.listdir(path):
         root, ext = os.path.splitext(filename)
         if ext == '.json':
-            infile = open(filename, 'r')
+            infile = open(path + '\\'+ filename, 'r')
             tmp_frame = json.load(infile)
             tmp_dic = {'uid': tmp_frame['uid'], 'age': tmp_frame['info'][0]['value'],
                     'gender': tmp_frame['info'][1]['value'], 'experience': tmp_frame['info'][2]['value']}
@@ -116,17 +116,18 @@ for filename in os.listdir(os.getcwd()):
                 tem_str = 'mode' +str(tmp_frame['mode'][i])
                 tem_man = 'man_' +str(i +1)
                 tem_rating = 'q' +str(i +1) +'_rating'
-                tem_overall = 'q' +str(i +1) +'_overall'
                 tmp_dic[tem_str +'sport'] = tmp_frame['sport'][i]
                 tmp_dic[tem_str +'test'] = int(tmp_frame[tem_man][0]['value'])
-                tmp_dic[tem_str +'engagement'] = int(tmp_frame[tem_rating][0]['value'])
-                tmp_dic[tem_str +'learning'] = int(tmp_frame[tem_rating][1]['value'])
-                tmp_dic[tem_str +'terminate'] = int(tmp_frame[tem_rating][2]['value'])
+                tmp_dic[tem_str +'attention'] = int(tmp_frame[tem_rating][0]['value'])
+                tmp_dic[tem_str +'mimic'] = int(tmp_frame[tem_rating][1]['value'])
+                tmp_dic[tem_str +'engagement'] = int(tmp_frame[tem_rating][2]['value'])
                 tmp_dic[tem_str +'master'] = int(tmp_frame[tem_rating][3]['value'])
-                tmp_dic[tem_str +'outcome'] = int(tmp_frame[tem_overall][0]['value'])
-                tmp_dic[tem_str +'confidence'] = int(tmp_frame[tem_overall][1]['value'])
-                tmp_dic[tem_str +'why'] = tmp_frame[tem_overall][2]['value']
+                tmp_dic[tem_str +'why'] = tmp_frame[tem_rating][4]['value']
+                tmp_dic[tem_str +'acceptable'] = int(tmp_frame[tem_rating][5]['value'])
+                tmp_dic[tem_str +'intelligence'] = int(tmp_frame[tem_rating][6]['value'])
+                tmp_dic[tem_str +'demonstration'] = int(tmp_frame[tem_rating][7]['value'])
+                tmp_dic[tem_str + 'comments'] = tmp_frame[tem_rating][8]['value']
+
             print(tmp_dic)
             frame = frame.append(tmp_dic, ignore_index=True)
- # print(frame)
-frame.to_csv('result.csv', index=False)
+frame.to_csv('data/result.csv', index=False)
