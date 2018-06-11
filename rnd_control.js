@@ -27,11 +27,6 @@ function uuidv4() {
 }
 var user_id = uuidv4();
 
-// show user id
-var htmlUserId = document.createElement("p");
-var nodeUserId = document.createTextNode(user_id);
-htmlUserId.appendChild(nodeUserId);
-document.getElementById('user_id').appendChild(htmlUserId);
 
 // get elements
 for (var i = 0; i < id_vid_real.length; i++) {
