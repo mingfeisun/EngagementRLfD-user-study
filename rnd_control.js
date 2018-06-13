@@ -36,6 +36,9 @@ for (var i = 0; i < id_vid_real.length; i++) {
 	html_q_rating.push(document.getElementById(id_q_rating[i]));
 }
 
+Math.random();
+Math.random();
+
 var currMode = combn_code[Math.floor((Math.random() * combn_code.length))];
 var currSport = combn_code[Math.floor((Math.random() * combn_code.length))];
 
