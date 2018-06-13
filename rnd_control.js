@@ -51,8 +51,8 @@ for (var i = 0; i < id_vid_real.length; i++) {
 Math.random();
 Math.random();
 
-var currMode = combn_code[Math.floor(Math.random() * combn_code.length * 4)];
-var currSport = combn_code[Math.floor(Math.random() * combn_code.length * 4)];
+var currMode = combn_code[Math.floor(Math.random() * combn_code.length)];
+var currSport = combn_code[Math.floor(Math.random() * combn_code.length)];
 
 for (var i = 0; i < html_vid_real.length; i++){
 	vid_name_real = "video_" + currSport[i] + ".mp4";
