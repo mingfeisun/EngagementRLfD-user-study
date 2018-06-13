@@ -3,6 +3,18 @@ var combn_code = [
 		[2, 3, 4, 1],
 		[3, 4, 1, 2],
 		[4, 1, 2, 3],
+		[2, 3, 4, 1],
+		[3, 4, 1, 2],
+		[4, 1, 2, 3],
+		[1, 2, 3, 4],
+		[3, 4, 1, 2],
+		[4, 1, 2, 3],
+		[1, 2, 3, 4],
+		[2, 3, 4, 1],
+		[4, 1, 2, 3],
+		[1, 2, 3, 4],
+		[2, 3, 4, 1],
+		[3, 4, 1, 2],
 	];
 
 var id_vid_real 	= ["vid_real_1", "vid_real_2", "vid_real_3", "vid_real_4"];
@@ -39,8 +51,8 @@ for (var i = 0; i < id_vid_real.length; i++) {
 Math.random();
 Math.random();
 
-var currMode = combn_code[Math.floor((Math.random() * combn_code.length))];
-var currSport = combn_code[Math.floor((Math.random() * combn_code.length))];
+var currMode = combn_code[Math.floor(Math.random() * combn_code.length) * 4];
+var currSport = combn_code[Math.floor(Math.random() * combn_code.length) * 4];
 
 for (var i = 0; i < html_vid_real.length; i++){
 	vid_name_real = "video_" + currSport[i] + ".mp4";
